@@ -1,4 +1,4 @@
-![Quintez Martin](https://www.facebook.com/photo.php?fbid=10203459964488782&l=52c37ed9b4)
+![Quintez Martin](https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/10734270_10203459964488782_2234430014256436641_n.jpg?oh=7456d2351c17e87c11dcefc4159ca564&oe=5AF42931)
 #Quintez Martin
 I'm a basketball player, Icon pixel artist, and now a future programmer
 

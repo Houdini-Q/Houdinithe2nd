@@ -1,0 +1,13 @@
+.stretch{
+  background-size: cover;
+}
+
+#media1 {
+  background-color: #fdb927;
+  color: black;
+  font-family: sans-serif;
+}
+
+.list {
+  color: blue;
+}

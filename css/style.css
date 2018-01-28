@@ -1,5 +1,6 @@
-.stretch{
+#isize {
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #media1 {
@@ -10,4 +11,18 @@
 
 .list {
   color: blue;
+}
+
+.main-body {
+  background-color: Black;
+  color: White;
+  }
+
+.body-media {
+  background-color: #552583;
+  color: #FDB927;
+}
+
+.body-projects {
+  background-color: lightgrey;
 }

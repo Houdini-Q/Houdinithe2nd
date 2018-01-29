@@ -12,15 +12,34 @@ html {
 #media1 {
   background-color: #fdb927;
   color: black;
+  display: block;
+  float: left;
+  text-align: center;
+  text-decoration: none;
   font-family: sans-serif;
 }
 
-.home {
+#media1:hover {
+  background-color: black;
+  color: #fdb927;
+}
+
+.home, .pronav {
   padding: 20px 10px;
 }
 
 .home a {
+  padding: 10px 10px;
+}
+
+.pronav a {
   padding: 0px 10px;
+  text-decoration: none;
+  color: #552583;
+}
+
+.pronav a:hover {
+  color: #fdb927;
 }
 
 .navigation {
@@ -41,6 +60,11 @@ html {
 .nav2 a {
   color: #fdb927;
   padding: 0px 10px;
+  text-decoration: none;
+}
+
+.nav2 a:hover {
+  color: black
 }
 
 .list {

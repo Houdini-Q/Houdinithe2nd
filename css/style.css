@@ -3,6 +3,26 @@ html {
     box-sizing: border-box;
 }
 
+#bballnav {
+  background-image: url("http://4hdwallpapers.com/wp-content/uploads/2014/12/black-mamba-wallpaper-21.jpg");
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+  color: #fdb927
+}
+
+#homepage-header {
+  font-weight: bold;
+  font-size: 300%;
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+#mepic1 {
+  text-align: center;
+}
+
 #isize {
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,6 +48,11 @@ html {
   padding: 20px 10px;
 }
 
+.homepage-navbar {
+  background-color: black;
+  margin-bottom: 100px;
+}
+
 .home a {
   padding: 10px 10px;
 }
@@ -35,11 +60,11 @@ html {
 .pronav a {
   padding: 0px 10px;
   text-decoration: none;
-  color: #552583;
+  color: #fdb927;
 }
 
 .pronav a:hover {
-  color: #fdb927;
+  color: #552583;
 }
 
 .navigation {
@@ -73,7 +98,7 @@ html {
 
 .main-body {
   background-color: Black;
-  color: White;
+  color: white;
   }
 
 .body-media {
@@ -121,6 +146,10 @@ html {
 .contact-btn a:active {
   position: relative;
   bottom: 2px;
+}
+
+.space {
+  margin-bottom: 100px;
 }
 
 hr {

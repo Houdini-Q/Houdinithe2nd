@@ -143,6 +143,15 @@ html {
 
   border: 1px solid purple;
 }
+
+.rdimg {
+  border-radius: 0px;
+}
+
+.rdimg p, img {
+  border-radius: 20px;
+}
+
 .contact-btn a:active {
   position: relative;
   bottom: 2px;

@@ -3,21 +3,25 @@ html {
     box-sizing: border-box;
 }
 
-#bballnav {
-  margin-top: -7px;
-  background-image: url("http://4hdwallpapers.com/wp-content/uploads/2014/12/black-mamba-wallpaper-21.jpg");
-  background-color: black;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat
-  color: #fdb927
-}
-
 #homepage-header {
   font-weight: bold;
   font-size: 300%;
   text-align: center;
+  margin-top: 160px;
   margin-bottom: 130px;
+}
+
+#homepage-header2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 100px;
+  font-family: "Segoe Script";
+}
+
+#homepage-header3 {
+  font-weight: bold;
+  color: #fdb927;
+  font-size: 150%;
 }
 
 #mepic1 {
@@ -30,42 +34,104 @@ html {
   background-attachment: fixed;
 }
 
-#media1 {
+.medianav {
   background-color: #fdb927;
   color: black;
-  display: block;
-  float: left;
-  text-align: center;
-  text-decoration: none;
+  text-align: left;
   font-family: sans-serif;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
-#media1:hover {
+.medianav a:hover {
   background-color: black;
   color: #fdb927;
 }
 
-.home, .pronav {
-  padding: 20px 10px;
-}
-
 .homepage-navbar {
+  margin-top: -7px;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 100vw;
+  padding: 20px;
+  background-image: url("http://4hdwallpapers.com/wp-content/uploads/2014/12/black-mamba-wallpaper-21.jpg");
   background-color: black;
-  margin-bottom: 100px;
+  background-size: ;
+  background-position: center;
+  background-repeat: no-repeat
+
 }
 
-.home a {
+.homepage-navbar a {
+  padding: 0px 10px;
+  text-decoration: none;
+  color: #fdb927;
+  text-align: center;
+}
+
+.homepage-navbar a:hover, .dropdown a:hover {
+  color: #552583;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255,200,200,0.2);
+  z-index: 1;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown-content a {
+  float: none;
+  color: purple;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #dddddd;
+  border: solid purple;
+}
+
+.medianav a {
   padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.home-links a {
+  text-decoration: none;
+  color: #fdb927;
+}
+
+.home-links a:hover {
+  color: #552583;
+}
+
+.pronav {
+  padding: 20px 10px;
+  background-color: white;
 }
 
 .pronav a {
   padding: 0px 10px;
   text-decoration: none;
-  color: #fdb927;
+  color: #552583;
 }
 
 .pronav a:hover {
-  color: #552583;
+  color: #fdb927;
 }
 
 .navigation {
@@ -91,6 +157,10 @@ html {
 
 .nav2 a:hover {
   color: black
+}
+
+.navigation3 {
+
 }
 
 .list {

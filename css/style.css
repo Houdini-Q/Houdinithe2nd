@@ -158,7 +158,7 @@ border-radius: 10px;
   /*border: solid;*/
 }
 
-.dropdown-content a:hover ul, li {
+.dropdown-content a:hover ul li {
   display: block;
   background-color: #dddddd;
   /*border: solid;*/

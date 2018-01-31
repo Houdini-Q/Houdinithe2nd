@@ -14,14 +14,25 @@ html {
 #homepage-header2 {
   text-align: center;
   font-weight: bold;
+  margin-left: 467px;
+  max-width: 400px;
   margin-bottom: 100px;
+  background-color: rgba(100, 100, 100, 0.1);
   font-family: "Segoe Script";
+  border-radius: 10px;
 }
 
 #homepage-header3 {
   font-weight: bold;
-  color: #fdb927;
+  color: #ECBA3E;
   font-size: 150%;
+}
+
+#homepage-about {
+background-color: rgba(100, 100, 100, 0.1);
+box-sizing: content-box;
+width: 500px;
+border-radius: 10px;
 }
 
 #mepic1 {
@@ -42,6 +53,13 @@ html {
   margin-top: -8px;
   margin-left: -8px;
   margin-right: -8px;
+}
+
+.medianav a {
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .medianav a:hover {
@@ -101,13 +119,6 @@ html {
 .dropdown-content a:hover {
   background-color: #dddddd;
   border: solid purple;
-}
-
-.medianav a {
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
 }
 
 .home-links a {

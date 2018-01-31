@@ -12,11 +12,11 @@ html {
 }
 
 #homepage-header2 {
-  align: center;
   text-align: center;
   font-weight: bold;
-  margin-left: 467px;
-  max-width: 400px;
+  box-sizing: content-box;
+  width: 400px;
+  margin:0 auto;
   margin-bottom: 100px;
   background-color: rgba(100, 100, 100, 0.1);
   font-family: "Segoe Script";

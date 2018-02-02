@@ -108,7 +108,7 @@ border-radius: 10px;
 }
 
 .mediab {
-  margin-bottom: -50px;
+  position: relative;
   font-size: 0.75rem;
   text-align: center;
   bottom: 0;

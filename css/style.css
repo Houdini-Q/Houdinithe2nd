@@ -111,9 +111,11 @@ border-radius: 10px;
 }
 
 .mediab {
+  position: sticky;
   font-size: 0.75rem;
   text-align: center;
-  min-height: 0%;
+  bottom: 0;
+  height: 1px;
 
   /* border: 1px red solid; */
 }

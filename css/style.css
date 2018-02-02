@@ -89,6 +89,7 @@ border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
+  position: relative;
 }
 
 .mediaspr {
@@ -101,9 +102,10 @@ border-radius: 10px;
   background-size: cover;
   transform: scaleX(-1);
   opacity: 0.5;
+  position: relative;
 }
 
-.mediab p {
+.mediab {
   /* margin: 0 auto;
   bottom: 0 auto; */
   margin-bottom: -100px;

@@ -1,6 +1,8 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
 
 #tint {
@@ -83,26 +85,30 @@ border-radius: 10px;
 .mediaspl {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   float: left;
-  padding-bottom: 125%;
+  grid-column-start: 1;
   width: 12%;
+  height: 100%;
+  padding-bottom: 1000px;
   margin-left: -8px;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
-  position: relative;
+  flex: 1;
+  display: block;
 }
 
 .mediaspr {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   float: right;
-  padding-bottom: 125%;
+  padding-bottom: 100%;
   width: 12%;
   margin-right: -8px;
   background-repeat: no-repeat;
   background-size: cover;
   transform: scaleX(-1);
   opacity: 0.5;
-  position: relative;
+  flex: 1;
+  display: block;
 }
 
 .mediab {

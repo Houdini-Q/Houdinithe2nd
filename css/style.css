@@ -85,6 +85,7 @@ border-radius: 10px;
 .mediaspl {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   float: left;
+  position: relative;
   width: 12%;
   padding-bottom: 125%;
   margin-left: -8px;
@@ -97,6 +98,7 @@ border-radius: 10px;
 .mediaspr {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   float: right;
+  position: relative;
   padding-bottom: 125%;
   width: 12%;
   margin-right: -8px;
@@ -111,7 +113,7 @@ border-radius: 10px;
   position: relative;
   font-size: 0.75rem;
   text-align: center;
-  bottom: 0;
+  bottom: 0 absolute;
   /* border: 1px red solid; */
 }
 

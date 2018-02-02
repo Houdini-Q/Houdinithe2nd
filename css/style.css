@@ -277,7 +277,12 @@ border-radius: 10px;
     position: relative;
     bottom: 0;
     font-size: 0.75rem;
-    text-align: center;
+}
+
+.mediab {
+  bottom:0;
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 .container {

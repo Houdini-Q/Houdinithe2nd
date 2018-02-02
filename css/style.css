@@ -108,13 +108,12 @@ border-radius: 10px;
 }
 
 .mediab {
-  margin-left: 150px;
   margin-bottom: -50px;
-  max-width: 1030px;
-  position: relative;
+  max-width: 100%;
   font-size: 0.75rem;
   text-align: center;
-  /*border: 1px red solid;*/
+  bottom: 0;
+  /* border: 1px red solid; */
 }
 
 .homepage-navbar {

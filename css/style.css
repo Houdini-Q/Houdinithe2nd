@@ -1,6 +1,10 @@
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#tint {
+  background-color: rgba(255, 255, 0, 0.5);
 }
 
 #homepage-header {
@@ -47,6 +51,12 @@ border-radius: 10px;
   background-attachment: fixed;
 }
 
+.media h1 {
+  align: center;
+  /* border-style: ridge; */
+  text-align: center;
+}
+
 .medianav {
   background-color: #fdb927;
   color: black;
@@ -69,8 +79,32 @@ border-radius: 10px;
   color: #fdb927;
 }
 
+.mediaspl {
+  background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
+  float: left;
+  padding-bottom: 122.5%;
+  width: 12%;
+  margin-left: -8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.mediaspr {
+  background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
+  float: right;
+  padding-bottom: 122.5%;
+  width: 12%;
+  margin-right: -8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scaleX(-1);
+  opacity: 0.5;
+}
+
 .homepage-navbar {
   margin-top: -7px;
+  margin-left:-8px;
   top: 0;
   left: 0;
   height: 1.3em;
@@ -78,7 +112,6 @@ border-radius: 10px;
   padding: 20px;
   background-image: url("http://4hdwallpapers.com/wp-content/uploads/2014/12/black-mamba-wallpaper-21.jpg");
   background-color: black;
-  background-size: ;
   background-position: center;
   background-repeat: no-repeat
 
@@ -244,6 +277,7 @@ border-radius: 10px;
     position: relative;
     bottom: 0;
     font-size: 0.75rem;
+    text-align: center;
 }
 
 .container {

@@ -1,5 +1,5 @@
 
-html {
+html, body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -68,6 +68,7 @@ border-radius: 10px;
   margin-top: -8px;
   margin-left: -8px;
   margin-right: -8px;
+  position: relative;
 }
 
 .medianav a {
@@ -85,21 +86,20 @@ border-radius: 10px;
 .mediaspl {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   float: left;
-  position: relative;
   width: 12%;
-  padding-bottom: 125%;
+  padding-bottom: 75%;
   margin-left: -8px;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
   margin-bottom: -8px;
+  min-height: 100%;
 }
 
 .mediaspr {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   float: right;
-  position: relative;
-  padding-bottom: 125%;
+  padding-bottom: 75%;
   width: 12%;
   margin-right: -8px;
   background-repeat: no-repeat;
@@ -107,6 +107,7 @@ border-radius: 10px;
   transform: scaleX(-1);
   opacity: 0.5;
   margin-bottom: -8px;
+  min-height: 100%;
 }
 
 .mediab {

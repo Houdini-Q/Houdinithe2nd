@@ -1,8 +1,14 @@
 
 html, body {
-  box-sizing: border-box;
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
 }
 
 #tint {
@@ -63,11 +69,9 @@ border-radius: 10px;
 .medianav {
   background-color: #fdb927;
   color: black;
+  width: 100%;
   text-align: left;
   font-family: sans-serif;
-  margin-top: -8px;
-  margin-left: -8px;
-  margin-right: -8px;
   position: relative;
 }
 
@@ -83,39 +87,39 @@ border-radius: 10px;
   color: #fdb927;
 }
 
-.mediaspl {
+#mediaspl {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
-  float: left;
   width: 12%;
-  /* padding-bottom: 75%; */
-  margin-left: -8px;
-  background-repeat: repeat-y;
-  background-size: cover;
+  height: 104%;
   opacity: 0.5;
-  margin-bottom: -8px;
-  min-height: 257%;
+  position: absolute;
 }
 
-.mediaspr {
+#mediaspr {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
-  float: right;
-  /* padding-bottom: 75%; */
   width: 12%;
-  margin-right: -8px;
-  background-repeat: repeat-y;
-  background-size: cover;
+  height: 104%;
   transform: scaleX(-1);
   opacity: 0.5;
-  margin-bottom: -8px;
-  height: 257%;
+  position: absolute; right: 0;
 }
 
-.mediab {
-  position: relative;
+#mediab {
+  height: 40px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+}
+
+#mediab p {
   font-size: 0.75rem;
   text-align: center;
-  bottom: 0;
-  /* border: 1px red solid; */
+}
+
+#mediab hr {
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 .homepage-navbar {
@@ -124,7 +128,7 @@ border-radius: 10px;
   top: 0;
   left: 0;
   height: 1.3em;
-  width: 100vw;
+  /* width: 100%; */
   padding: 20px;
   background-image: url("http://4hdwallpapers.com/wp-content/uploads/2014/12/black-mamba-wallpaper-21.jpg");
   background-color: black;
@@ -281,15 +285,22 @@ border-radius: 10px;
 .main-body {
   background-color: Black;
   color: white;
+  display: block;
+  width: 100%;
   }
 
 .body-media {
   background-color: #552583;
   color: #FDB927;
+  width: 100%;
+  display: block;
+  height: 1500px;
 }
 
 .body-projects {
-  background-color: lightgrey;
+  background-image: url("http://architectureimg.com/wp-content/uploads/2016/12/houses-japanese-house-indoor-japan-green-nature-garden-dual-monitor-background.jpg");
+  background-color: black;
+  color: #76A236;
 }
 
 .body-blog {
@@ -346,3 +357,11 @@ border-radius: 10px;
 hr {
   margin-top: 100px;
 }
+
+.footer {
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+  }

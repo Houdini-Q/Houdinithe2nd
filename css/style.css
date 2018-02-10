@@ -28,11 +28,6 @@ hr {
   text-align: center;
 }
 
-#wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
 #tint {
   background-color: rgba(255, 255, 0, 0.5);
 }
@@ -130,7 +125,7 @@ border-radius: 10px;
 .mediaspl {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   width: 12%;
-  height: 105%;
+  height: 104%;
   opacity: 0.5;
   position: absolute;
   background-size: cover;
@@ -139,7 +134,7 @@ border-radius: 10px;
 #mediaspr {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   width: 12%;
-  height: 105%;
+  height: 104%;
   transform: scaleX(-1);
   opacity: 0.5;
   position: absolute; right: 0;
@@ -147,7 +142,7 @@ border-radius: 10px;
 }
 
 #mediab {
-  height: 0%;
+  height: 25px;
   position: absolute;
   width: 100%;
   left: 0px;
@@ -349,13 +344,32 @@ border-radius: 10px;
   color: #FDB927;
   width: 100%;
   display: block;
-  height: 1500px;
+  height: 100%;
 }
 
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+
 .body-projects {
-  background-image: url("http://architectureimg.com/wp-content/uploads/2016/12/houses-japanese-house-indoor-japan-green-nature-garden-dual-monitor-background.jpg");
+  background-image: url("http://sf.co.ua/13/01/wallpaper-740220.jpg");
   background-color: black;
   color: #76A236;
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.body-rps {
+  background-image: url("http://www.conduithub.com/hubfs/Blog_images/shutterstock_101305453.jpg?t=1516963838286");
+  background-color: black;
+  color: silver;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .body-blog {

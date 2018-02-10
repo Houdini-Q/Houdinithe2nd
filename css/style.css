@@ -130,7 +130,7 @@ border-radius: 10px;
 .mediaspl {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   width: 12%;
-  height: 103%;
+  height: 104%;
   opacity: 0.5;
   position: absolute;
   background-size: cover;
@@ -139,7 +139,7 @@ border-radius: 10px;
 #mediaspr {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   width: 12%;
-  height: 103%;
+  height: 104%;
   transform: scaleX(-1);
   opacity: 0.5;
   position: absolute; right: 0;
@@ -147,7 +147,7 @@ border-radius: 10px;
 }
 
 #mediab {
-  height: 40px;
+  height: 1%;
   position: absolute;
   width: 100%;
   left: 0px;

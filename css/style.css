@@ -8,6 +8,10 @@ html, body {
   box-sizing: border-box;
 }
 
+hr {
+  margin-top: 8%;
+}
+
 #greeting {
   background-color: rgba(0, 0, 0, 0);
   color: white;
@@ -413,12 +417,9 @@ border-radius: 10px;
 }
 
 .space {
-  margin-bottom: 100px;
+  margin-bottom: 8%;
 }
 
-hr {
-  margin-top: 100px;
-}
 
 .footer {
     height: 40px;

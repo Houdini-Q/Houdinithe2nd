@@ -8,6 +8,21 @@ html, body {
   box-sizing: border-box;
 }
 
+#greeting {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  /* padding: 15px; */
+  width: 50%;
+  /* position: relative; */
+}
+
+#greeting p {
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
 #wrapper {
   min-height: 100%;
   position: relative;

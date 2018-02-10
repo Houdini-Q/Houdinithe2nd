@@ -87,6 +87,7 @@ border-radius: 10px;
   background-color: #fdb927;
   color: #552583;
   width: 100%;
+  height: auto;
   text-align: left;
   font-family: sans-serif;
   position: relative;
@@ -97,6 +98,7 @@ border-radius: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  color: #552583;
 }
 
 .medianav a:hover {

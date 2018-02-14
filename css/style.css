@@ -93,6 +93,23 @@ border-radius: 10px;
   background-attachment: fixed;
 }
 
+#results {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 17em;
+  /* margin: 0 auto; */
+  width: 10%;
+  margin-right: auto;
+  margin-left: 46%;
+  border-radius: 100%;
+}
+
+#results p {
+  color: silver;
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
 .videoWrapper {
 	position: relative;
 	padding-bottom: 32%;
@@ -500,26 +517,23 @@ border-radius: 10px;
 .button1 {
 padding: 20px 120px 20px 110px;
 background-color: rgba(255, 0, 0, 0);
-color: grey;
 float: left;
-
+color: rgba(255, 0, 0, 0);
 }
 
 .button2 {
-  padding: 20px 116px;
+  padding: 20px 117px;
   background-color: rgba(255, 0, 0, 0);
-  color: grey;
-  /* top: 0 auto; */
   margin-left: 10.5%;
-
+  color: rgba(255, 0, 0, 0);
 
 }
 
 .button3 {
   padding: 20px 106px;
   background-color: rgba(255, 0, 0, 0);
-  color: grey;
-float: right;
+  float: right;
+  color: rgba(255, 0, 0, 0);
 }
 
 .buttonp {
@@ -538,7 +552,6 @@ float: right;
 .space {
   margin-bottom: 8%;
 }
-
 
 .footer {
     height: 40px;

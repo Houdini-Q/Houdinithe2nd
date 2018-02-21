@@ -2,7 +2,7 @@
 var result = "";
 var userScore = 0;
 var computerScore = 0;
-
+var tieScore = 0;
 
 
 // if computer wins - computer score ++;
@@ -33,6 +33,7 @@ var computerScore = 0;
 
 var userWins = "You win!";
 var computerWins = "The Computer wins!";
+var ties = "It's a tie!"
 var roundCounter = 0;
 
 var rock = function() {
@@ -77,6 +78,7 @@ var gameRound = function() {
         }
     } else {
         alert('Tie!');
+        tieScore ++;
     }
 };
 
@@ -95,7 +97,11 @@ output.innerHTML = "<p>You Win!</p>";
 break
 } else if (computerScore === 3) {
 console.log("computerWins");
-// output.innerHTML = "<p>The Computer Wins!</p>";
+output.innerHTML = "<p>The Computer Wins!</p>";
 break
-} else {gameRound()}
-}
+} else if (computerScore === 2 && userScore === 2 && tieScore < 1) {
+  console.log("ties");
+  output.innerHTML = "<p>It is a tie!</p>";
+break
+} else {gameRound();}
+};

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link type="text/css" rel="stylesheet" href="/css/style.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <title>Quintez Martin || Choose Your Own Adventure</title>
 </head>
 <body class="body-cyoa">
@@ -26,6 +27,9 @@
     <h1><center>Choose Your Own Adventure!</center></h1>
   </div>
   <div id="begin"></div>
+<div class="matrix">
+  <button id="toggle" onclick="setButtonText(); matrix()">Start Game</button>
+</div>
   <div class="footer">
   <footer>
   <hr>
@@ -33,5 +37,6 @@
   </footer>
   </div>
   <script type="text/javascript" src="cyoa.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </body>
 </html>

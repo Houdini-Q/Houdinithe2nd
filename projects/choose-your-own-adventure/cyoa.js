@@ -1,32 +1,29 @@
 
 
+var firstName;
+var lastName;
+
+function setButtonText() {
+  var change = document.getElementById("toggle");
+  if (change.innerHTML = "Start Game")
+  {
+    change.innerHTML = "System Failure";
+  }
+
+  setTimeout(function() { matrix(); }, 1000);
+
+}
+
 $(window).bind("load", function() {
    // code here
 
-// function greeting() {
-//
-// }
+  var output = document.querySelector('#begin');
 
-var firstName;
-var lastName;
-var output = document.querySelector('#begin');
-
-$(function(){
     firstName = prompt("Before we begin this game, for starters I must ask you, what is your first name?") || "Visitor";
     lastName = prompt("What's your last name?") || "";
-    });
 
-return firstName;
-return lastName;
+output.innerHTML = "<p>Welcome to your adventure, " + firstName + " " + lastName + ". Now let us begin!</p>";
 });
-    output.innerHTML = "<p>Welcome to your adventure, " + firstName + " " + lastName + ". Now let us begin!</p>";
-
-
-  function setButtonText() {
-    var change = document.getElementById("toggle");
-    change.innerHTML = "System Failure";
-    console.log("start game");
-  }
 
   function matrix() {
 
@@ -45,16 +42,23 @@ return lastName;
             } else if (response === "gun") {
               response = prompt();
             } else {
-              alert("Please type in a valid input! Refresh the page to try again.");
+              alert("Please type in a valid input! Click 'Start Game' to try again.");
             }
           }
         } else {
-          alert("Please type in a valid input! Refresh the page to try again.");
+          alert("Please type in a valid input! Click 'Start Game' to try again.");
         }
       };
   } else if (response === "blue") {
       response = alert("After taking the blue pill you begin to feel sleepy and you lay your head down to rest. After a couple of hours you wake up in your bedroom as if nothing ever happened.");
   } else {
-      alert("Please type in a valid input! Refresh the page to try again.");
+      alert("Please type in a valid input! Click 'Start Game' to try again.");
   }
+
+    var change = document.getElementById("toggle");
+    if (change.innerHTML = "System Failure")
+    {
+      change.innerHTML = "Start Game";
+    }
+
   }

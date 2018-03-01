@@ -81,6 +81,7 @@ background-color: rgba(100, 100, 100, 0.1);
 box-sizing: content-box;
 width: 500px;
 border-radius: 10px;
+list-style: none;
 }
 
 #mepic1 {

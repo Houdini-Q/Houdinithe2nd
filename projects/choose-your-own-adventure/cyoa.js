@@ -5,7 +5,7 @@ var lastName;
 
 function setButtonText() {
   var change = document.getElementById("toggle");
-  if (change.innerHTML = "Start Game")
+  if (change.innerHTML === "Start Game")
   {
     change.innerHTML = "System Failure";
   }

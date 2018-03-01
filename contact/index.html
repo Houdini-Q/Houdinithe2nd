@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link type="text/css" rel="stylesheet" href="../css/style.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <title>Quintez Martin | Contact</title>
 </head>
 <body>
@@ -24,24 +25,37 @@
       </nav>
     </header>
   </div>
+  <br>
+  <br>
+  <div class="c-container contactb">
+    <div>
+      <h1><center>Contact Me</center></h1>
+    </div>
+  <div class="contact-form">
   <div>
-    <h1><center>Contact Page</center></h1>
+    <p>
+      I am here to answer any questions you may have about your experiences. Reach out to me and I'll respond as soon as I can.
+    </p>
+    <p>
+Even if there is something you have always wanted to experience and can't find it on my webpage, let me know and I promise I'll do my best to find it for you and send you there.
+    </p>
   </div>
-  <div class="container">
+
     <form action="https://formspree.io/mrmartin2016@yahoo.com" method="POST">
 
-  <input type="text" name="firstname" placeholder="First Name" size="100" autofocus required>
-  <input type="text" name="lastname" placeholder="Last Name" size="100" required>
-  <input type="email" name="userEmail" placeholder="your.email@example.com" required>
+  <input id="input" type="text" name="firstname" placeholder="First Name" size="100" autofocus required>
+  <input id="input" type="text" name="lastname" placeholder="Last Name" size="100" required>
+  <input id="input" type="tel" name="userPhoneNumber" placeholder="555-555-5555" size="100" minlength="9" maxlength="14" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+  <input id="input" type="email" name="userEmail" placeholder="your.email@example.com" required>
   <br>
   <label>What's this message about?
     <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
     <input type="radio" name="subject" value="personal" checked><span>Personal message</span>
-    <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
+    <input type="radio" name="subject" value="other" checked><span>Avengers</span>
   </label>
   <br>
-  <input type="checkbox" name="optin" value="trusting" checked>Subscribe me to your newsletter!
-  <input type="checkbox" name="optout" value="skeptical" unchecked>Don't Subscribe me to your newsletter!
+  <input type="checkbox" name="optin" value="trusting" checked>Subscribe to Wakanda!
+  <input type="checkbox" name="optout" value="skeptical" unchecked>Don't Subscribe to Wakanda!
   <br>
   <label for="marketing">How did you hear about me?</label>
   <select name="marketing">
@@ -60,18 +74,31 @@
   </select>
   <br>
   <br>
-  <textarea name="user_message" rows="9" cols="40"></textarea>
-  <input type="submit">
+  <textarea id="message" name="user_message" placeholder="Type message..."rows="6" cols="40"></textarea>
+  <br>
+  <div class="c-button">
+  <input type="image" src="/contact/bp button.png" alt="Submit" width="48" height="48">
+<center>Submit</center></input>
+</div>
 </form>
+<br>
+<br>
+<div>
+  <ul id="contact-array" class="contact-list">
+
+  </ul>
+</div>
   </div>
+</div>
   <div>
   <br>
   <br>
   <br>
-  <hr>
-    <footer>
+</div>
+    <footer class=>
+      <hr>
       <p class="bottom">&copy 2018 | Quintez Martin</p>
     </footer>
-  </div>
+<script type="text/javascript" src="contact.js"></script>
 </body>
 </html>

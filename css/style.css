@@ -111,6 +111,76 @@ border-radius: 10px;
   text-align: center;
 }
 
+.contactb {
+  background-image: url("/contact/Black Panther.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+
+.c-container {
+    max-width: 960px;
+    height: 900px;
+    margin: 0 auto;
+    border-style: outset;
+    box-shadow: 5px 5px 2px 0px rgba(25, 25, 25, 0.5);
+    color: #2d004d;
+    font-family: Georgia;
+}
+
+.contact-form {
+  position: relative;
+    display: inline;
+    float: left;
+    width: 622px;
+    padding: 25px 30px;
+    text-align: left;
+    font-size: 100%;
+    color: #1e0033;
+}
+
+.contact-form p {
+    font-family: Georgia;
+    text-align: left;
+    font-size: 100%;
+    margin-bottom: 20px;
+}
+
+#input {
+  box-sizing: border-box;
+  background-color: #e1e1db;
+  width: 40%;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 3px;
+  margin-right: 4em;
+  margin-bottom: 2em;
+}
+
+#message {
+  background-image: url("/contact/Old Paper.jpg");
+  background-color: #e1e1db;
+  background-size: 100% 100%;
+  width: 100%;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 3px
+}
+
+textarea {
+  font-family: "segoe print", sans-serif;
+  font-size: 14px;
+}
+.c-button {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.c-button:hover {
+  color:  rgba(215, 215, 215, .7)
+}
+
 .highlighted {
   color: silver;
 }
@@ -532,6 +602,12 @@ border-color: gold;
     margin-top: 50px;
     margin-bottom: 150px;
     text-align: center;
+}
+
+.container ul,li {
+  list-style: none;
+  list-style-position: inside;
+  padding: 0;
 }
 
 .blog-post {

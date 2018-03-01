@@ -97,13 +97,14 @@ list-style: none;
 
 #results {
   background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 19%;
-  /* margin: 0 auto; */
+  margin-top: 11%;
+  /* margin: auto; */
   width: 12%;
-  margin-right: auto;
-  margin-left: 46%;
+  /* margin-right: auto; */
+  margin-left: 45%;
   border-radius: 100%;
   text-align: center;
+  position: fixed;
 }
 
 #results p {
@@ -111,6 +112,7 @@ list-style: none;
   font-size: 175%;
   padding: 10%;
   text-align: center;
+
 }
 
 .contactb {
@@ -580,8 +582,9 @@ border-color: gold;
   background-image: url("http://www.conduithub.com/hubfs/Blog_images/shutterstock_101305453.jpg?t=1516963838286");
   background-color: black;
   color: silver;
-  background-size: cover;
-
+  background-size: 100% 100%;
+  position: fixed;
+  /* height: 120%; */
 }
 
 .body-blog {
@@ -645,7 +648,7 @@ border-color: gold;
 
 .button1 {
   width: 26.2%;
-  padding: 2%;
+  padding: 1.5%;
   background-color: rgba(0, 0, 0, 0);
   float: left;
   color: rgba(255, 0, 0, 0);
@@ -658,7 +661,7 @@ border-color: gold;
 .button2 {
   width: 26.45%;
   margin-left: 10.5%;
-  padding: 2%;
+  padding: 1.5%;
   background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 0, 0, 0);
 }
@@ -669,7 +672,7 @@ border-color: gold;
 
 .button3 {
   width: 26.2%;
-  padding: 2%;
+  padding: 1.5%;
   background-color: rgba(255, 0, 0, 0);
   float: right;
   color: rgba(255, 0, 0, 0);
@@ -681,9 +684,9 @@ border-color: gold;
 
 .buttonp {
   margin-left: 14.4%;
-  margin-bottom: -3.3%;
-  position: absolute;
-  bottom: 7.3%;
+  /* margin-bottom: -3.3%; */
+  position: fixed;
+  bottom: 18.6%;
   width: 75.5%;
 }
 
@@ -694,6 +697,13 @@ border-color: gold;
 
 .space {
   margin-bottom: 8%;
+}
+
+.rpfooter {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  font-size: 0.75rem;
 }
 
 .footer {

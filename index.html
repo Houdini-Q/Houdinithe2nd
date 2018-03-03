@@ -9,33 +9,38 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <title>Quintez Martin | Web Developer</title>
 </head>
-<body class="main-body">
+<body>
   <div>
     <nav class="homepage-navbar">
+      <img src="/Name.png" height="50px">
       <a href="/">Home</a>
-      <a style="cursor:pointer">Projects</a>
-        <ul class="dropdown dropdown-content">
+      <button style="cursor:pointer" onclick="myFunction()" class="homepage-navbar">Projects <i class="fa fa-caret-down" style="display: inline;"></i></button>
+      <div class="dropdown">
+        <ul id="myDropdown" class="dropdown-content">
           <li><a href="https://twp2studentshowcase.netlify.com/">Class Showcase</a></li>
           <li><a href="/projects/choose-your-own-adventure">CYOA</a></li>
           <li><a href="/projects/rps">RPS</a></li>
+          <li><a href="https://bookstoreproject.netlify.com/">Bookstore</a></li>
         </ul>
+      </div>
       <a href="/media">Media</a>
       <a href="/blog">Blog</a>
-      <a href="/contact">Contact</a>
+      <a id="lastitem" href="/contact">Contact</a>
     </nav>
-    <body id="isize">
+  </header>
+  <div class="main-body">
+    <div>
+    <h1><b>Chattanooga's Finest</b></h1>
+    </div>
+    <div id="homepage-header2">
+    <h1>Quintez Martin</h1>
+    </div>
   </div>
-  <div id="homepage-header">
-  <h1><b>Chattanooga's Finest</b></h1>
+  <div class="main-body2">
+  <div id="homepage-header3">
+    <p>Facts About Little Ol' Me</p>
+    <hr>
   </div>
-  <div id="mepic1">
-    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/10734270_10203459964488782_2234430014256436641_n.jpg?oh=7456d2351c17e87c11dcefc4159ca564&oe=5AF42931" height="400" border-radius="200" alt="Photo of Me">
-  </div>
-  <div id="homepage-header2">
-  <h1>Quintez Martin</h1>
-  </div>
-  <div>
-    <p id="homepage-header3">Facts About Little Ol' Me</p>
     <ol id="homepage-about">
       <li>I was born in Chattanooga, and I am 28 years young!</li>
       <li>I'm a recreational basketball player. And I'm pretty good might I add.</li>
@@ -46,20 +51,25 @@
       <li>I love to play video games. Specifically NBA2k games on the Xbox One.</li>
     </ol>
   </div>
-    <p id="homepage-header3">Social Media:</p>
-<footer>
+  <div class="main-body3">
+    <h2>Social Media</h2>
+  <div class="main-body3hr">
+    <hr>
+  </div>
   <div class="home-links">
     <ul>
-      <li><a href="https://www.facebook.com/quintez.martin"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-      <li><a href="http://www.github.com/houdini-q"><i class="fab fa-github fa-2x"></i></a></li>
-      <li><a href="https://www.instagram.com/houdinithe2nd/"><i class="fab fa-instagram fa-2x"></i></a></li>
-      <li><a class="contact-btn" href="mailto:mrmartin2016@yahoo.com"><i class="fa fa-envelope-square fa-2x"></i></a>
-      <li><a href="tel:423-394-5187"><i class="fa fa-phone-square fa-2x"></i></a></li>
+      <li><a href="https://www.facebook.com/quintez.martin"><i class="fab fa-facebook-square fa-4x"></i></a></li>
+      <li><a href="http://www.github.com/houdini-q"><i class="fab fa-github fa-4x"></i></a></li>
+      <li><a href="https://www.instagram.com/houdinithe2nd/"><i class="fab fa-instagram fa-4x"></i></a></li>
+      <li><a class="contact-btn" href="mailto:mrmartin2016@yahoo.com"><i class="fa fa-envelope-square fa-4x"></i></a>
+      <li><a href="tel:423-394-5187"><i class="fa fa-phone-square fa-4x"></i></a></li>
     </ul>
   </div>
-<hr>
-    <p class="bottom">&copy 2018 | Quintez Martin</p>
+<footer class="bottom">
+<!-- <hr> -->
+    <p>&copy 2018 | Quintez Martin</p>
 </footer>
+</div>
 <script type="text/javascript" src="landingpage.js"></script>
 </body>
 </html>

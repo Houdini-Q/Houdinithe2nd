@@ -1,5 +1,42 @@
 
 
+
+@font-face {
+  font-family: 'Chancery Cursive';
+  src: url('/css/fonts/chancur-webfont.woff2') format('woff2'),
+       url('/css/fonts/chancur-webfont.woff') format('woff'),
+       url('/css/fonts/chancur.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Wakanda';
+  src: url('css/fonts/wakandaforever-regular-webfont.woff2') format('woff2'),
+       url('css/fonts/wakandaforever-regular-webfont.woff') format('woff'),
+       url('css/fonts/wakandaforever-regular-webfont.ttf') format('.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matrix Code';
+  src: url('/css/fonts/matrix_code_nfi-webfont.woff2') format('woff2'),
+       url('/css/fonts/matrix_code_nfi-webfont.woff') format('woff'),
+       url('/css/fonts/matrix code nfi.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Turtles';
+  src: url('/css/fonts/turtles-webfont.woff2') format('woff2'),
+       url('/css/fonts/turtles-webfont.woff') format('woff'),
+       url('/css/fonts/Turtles.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -8,18 +45,15 @@ html, body {
   box-sizing: border-box;
 }
 
-hr {
+.bottom hr {
   margin-top: 8%;
-}
+ }
 
 #greeting {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   margin: 0 auto;
-  /* padding: 15px; */
   width: 50%;
-  /* position: relative; */
-
 }
 
 #greeting p {
@@ -32,10 +66,7 @@ hr {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   margin: 0 auto;
-  /* padding: 15px; */
   width: 50%;
-  /* position: relative; */
-
 }
 
 #begin p {
@@ -53,8 +84,8 @@ hr {
   font-weight: bold;
   font-size: 300%;
   text-align: center;
-  margin-top: 160px;
-  margin-bottom: 130px;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
 #homepage-header2 {
@@ -71,28 +102,31 @@ hr {
 }
 
 #homepage-header3 {
-  font-weight: bold;
+  padding: 50px;
   color: #ECBA3E;
-  font-size: 150%;
-}
-
-#homepage-about {
-background-color: rgba(100, 100, 100, 0.1);
-box-sizing: content-box;
-width: 500px;
-border-radius: 10px;
-list-style: none;
-}
-
-#mepic1 {
+  font-family: 'Chancery Cursive', serif;
+  font-size: 3em;
   text-align: center;
 }
 
-#isize {
-  background-image: url("/kobe_bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+#homepage-header3 hr {
+  background-color: black;
+  padding: 2px;
+  width: 15%;
+  border: none;
+  margin-top: -20px;
+}
+
+#homepage-about {
+background-color: rgba(100, 100, 100, 0);
+box-sizing: content-box;
+width: 600px;
+border-radius: 10px;
+list-style: none;
+text-align: center;
+font-size: 26px;
+padding: 10px;
+margin:0 auto;
 }
 
 #results {
@@ -120,7 +154,6 @@ list-style: none;
   background-image: url("/contact/Black Panther.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
 }
 
 .c-container {
@@ -129,7 +162,7 @@ list-style: none;
     margin: 0 auto;
     border-style: outset;
     box-shadow: 5px 5px 2px 0px rgba(25, 25, 25, 0.5);
-    color: #2d004d;
+    color: #660066;
     font-family: Georgia;
 }
 
@@ -141,7 +174,7 @@ list-style: none;
     padding: 25px 30px;
     text-align: left;
     font-size: 100%;
-    color: #1e0033;
+    color: #660066;
 }
 
 .contact-form p {
@@ -211,7 +244,6 @@ border-color: gold;
 .videoWrapper {
 	position: relative;
 	padding-bottom: 32%;
-	/* padding-top: 25px; */
   width: 55%;
   height: 0;
   margin: 0 auto;
@@ -229,29 +261,6 @@ border-color: gold;
   /* border-style: ridge; */
   text-align: center;
   margin-bottom: 150px;
-}
-
-.medianav {
-  background-color: #fdb927;
-  color: #552583;
-  width: 100%;
-  height: auto;
-  text-align: left;
-  font-family: sans-serif;
-  position: relative;
-}
-
-.medianav a {
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  color: #552583;
-}
-
-.medianav a:hover {
-  background-color: black;
-  color: #fdb927;
 }
 
 .mediaspl {
@@ -291,18 +300,55 @@ border-color: gold;
   margin-right: 12%;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255,200,200,0.7);
+  font-weight: bold;
+  overflow: auto;
+  text-align: center;
+  padding: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #552583;
+  padding: 4px 12px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  list-style: none;
+  /* border-bottom: solid; */
+  /* border-left: solid; */
+  /* border-right: solid; */
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
 .nav-cyoa {
   margin-top: -7px;
   margin-left:-8px;
   top: 0;
   left: 0;
-  height: 1.3em;
   padding: 20px;
   background-color: black;
 }
 
 .nav-cyoa a {
-  padding: 0px 10px;
+  padding: 20px;
   text-decoration: none;
   color: white;
   text-align: center;
@@ -312,19 +358,19 @@ border-color: gold;
   background-color: grey;
   color: green;
   text-align: center;
-  padding: 12px 10px 22px 10px;
+  padding: 20px;
   background-size: cover;
 }
-
-.nav-cyoa ul:hover {
-  background-color: grey;
+.nav-cyoa ul {
+  margin-left: 2.8%;
 }
 
 .nav-cyoa a:hover + .dropdown ul {
   display: block;
   text-align: center;
   position: absolute;
-  top: 100%;
+
+
 }
 
 .nav-cyoa a:hover + .dropdown li {
@@ -332,136 +378,217 @@ border-color: gold;
   text-align: center;
 }
 
+.nav-rps {
+  width: 100%;
+  height: auto;
+  background-image: url("/projects/rps/Black_wood.jpg");
+  background-color: white;
+  background-size: auto auto;
+  color: black;
+}
 
+.nav-rps a {
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  list-style: none;
+}
+
+.nav-rps a:hover {
+  background-color: rgba(10, 10, 10, 0.6);
+  color: white;
+  padding: 14px 16px;
+}
+
+.nav-rps ul {
+  margin-left: 2.6%;
+}
+
+.nav-cyoa a:hover + .dropdown, .nav-rps a:hover + .dropdown {
+  display: block;
+}
+
+/* Navigation bar for Home Page */
 .homepage-navbar {
-  margin-top: 0;
-  margin-left: 0;
-  top: 0;
-  left: 0;
-  /* height: 1.3%; */
-  /* width: 100%; */
-  padding: 1.3%;
-  background-image: url("/Black Mamba.jpg");
+  height: 70px;
   background-color: black;
-  background-position: center;
-  background-repeat: no-repeat
+  text-align: right;
+}
+
+.homepage-navbar img {
+  float: left;
+  border-radius: 0;
+  top: 0;
 
 }
 
+#lastitem {
+  margin-right: 15px;
+}
+
+.homepage-navbar button {
+  padding: 10px 12px;
+  font-size: 15px;
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fdb927;
+  border: none;
+ }
+
+.homepage-navbar button:hover {
+  padding: 10px 12px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #552583;
+}
+
+.homepage-navbar:focus {
+  outline: none;
+}
+
 .homepage-navbar a {
-  padding: 0px 10px;
+  padding: 10.5px 8px;
   text-decoration: none;
   color: #fdb927;
   text-align: center;
 }
 
-.homepage-navbar a:hover, .dropdown a:hover {
+.homepage-navbar a:hover {
+  padding: 10.5px 8px;
   color: #552583;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
+.homepage-navbar ul {
+  margin-left: -133px;
+  top: -2px;
+}
+
+/* Navigation bar for Media Page */
+.medianav {
+  background-color: #fdb927;
   color: #552583;
-  box-sizing: border-box;
-  width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(255,200,200,0.7);
-  text-align: center;
-  margin: 0 auto;
-  margin-left: 15px;
-  font-weight: bold;
+  text-align: left;
+  font-family: sans-serif;
   padding: 0;
-  z-index: 1;
+  border: none;
 }
 
-.dropdown-content ul {
-  position: absolute;
+.medianav button {
+  padding: 10px 12px;
+  font-size: 15.5px;
+ }
+
+.medianav button:hover {
+  background-color: black;
+  color: #fdb927;
+  padding: 10px 12px;
 }
 
-.dropdown-content:hover {
-  display: block;
+.medianav:focus {
+  outline: none;
+}
+
+.medianav a {
+  padding: 10.5px 8px;
   text-align: center;
-}
-
-.dropdown-content:hover ul {
-  display: block;
-  text-align: center;
-}
-
-.dropdown-content:hover li {
-  display: block;
-  text-align: center;
-}
-
-.dropdown {
-  overflow: hidden;
-  list-style: none;
-}
-
-.medianav a:hover + .dropdown, .nav-cyoa a:hover + .dropdown {
-  display: block;
-  text-align: center;
-}
-
-.nav2 a:hover + .dropdown {
-  display: block;
-
-}
-
-.nav2 ul:hover {
-  background-color: grey;
-}
-
-.nav2 a:hover + .dropdown ul {
-  display: block;
-  text-align: center;
-  position: absolute;
-  top: 100%;
-}
-
-.nav2 a:hover + .dropdown li {
-  display: block;
-  text-align: center;
-}
-
-.homepage-navbar a:hover + .dropdown {
-  display: block;
-  text-align: center;
-}
-
-.homepage-navbar a:hover + .dropdown ul {
-  display: block;
-  text-align: center;
-  position: absolute;
-  top: 100%;
-}
-
-.homepage-navbar a:hover + .dropdown li {
-  display: block;
-  text-align: center;
-}
-
-.dropdown-content a {
-  background-color: #f9f9f9;
+  text-decoration: none;
   color: #552583;
+}
+
+.medianav a:hover {
+  background-color: black;
+  color: #fdb927;
+}
+
+.medianav ul {
+  margin-left: -133px;
+  top: -2px;
+}
+
+/*Navigation bar for the contact page and blog page*/
+.nav2 {
+  background-color: #660066;
+  color: #fdb927;
+  padding: 10px 16px;
+  border: none;
+}
+
+.nav2:hover {
+  color: black;
+  border: none;
+}
+
+.nav2:focus {
+  outline: none;
+}
+
+.nav2 a {
+  color: #fdb927;
   padding: 4px 12px;
   text-decoration: none;
-  display: block;
-  top: 100%;
-  margin: 0 auto;
+  text-align: center;
 }
 
-.dropdown-content a:hover {
-  display: block;
-  background-color: #dddddd;
-  padding: 4px 12px;
+.nav2 a:hover {
+  color: black;
 }
 
-.dropdown-content a:hover ul{
-  display: block;
-  background-color: #dddddd;
-  padding: 4px 12px;
+.nav2 ul {
+  margin-left: -131px;
+  top: 7px;
+}
+
+/* homepage style */
+.main-body {
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/CTS.jpg");
+  color: white;
+  margin-top: -21px;
+  }
+
+.main-body2 {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-image: url("/MeTux.jpg");
+  color: purple;
+  margin-top: -24px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid purple;
+}
+
+.main-body3 {
+  background-color: black;
+  color: #ECBA3E;
+  margin-top: -40px;
+}
+
+.main-body3 h2 {
+  padding: 50px;
+  color: #ECBA3E;
+  font-family: 'Times New Romans', serif;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: -30px;
+}
+
+.main-body3hr hr {
+  width: 25%;
+  background-color: #ECBA3E;
+  padding: 2px;
+  border: none;
+  margin-bottom: 70px;
+}
+
+.home-links {
+  text-align: center;
+  margin-right: 50px;
+  margin-bottom: 125px;
 }
 
 .home-links a {
@@ -475,9 +602,10 @@ border-color: gold;
 
 .home-links li {
   display: inline-block;
-  margin: 0px 4px;
+  padding: 0px 20px 0px 20px;
 }
 
+/* Project page nav bar */
 .pronav {
   padding: 20px 10px;
   background-color: white;
@@ -493,6 +621,7 @@ border-color: gold;
   color: #fdb927;
 }
 
+/*  */
 .navigation {
   background-color: #552583;
   padding: 20px 70px;
@@ -503,29 +632,6 @@ border-color: gold;
   padding: 0px 10px;
 }
 
-.nav2 {
-  background-color: #552583;
-  padding: 20px 20px;
-  list-style: none;
-}
-
-.nav2 a {
-  color: #fdb927;
-  padding: 4px 12px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.nav2 a:hover {
-  color: black
-}
-
-
-
-.navigation3 {
-
-}
-
 .list {
   color: blue;
 }
@@ -533,13 +639,6 @@ border-color: gold;
 .list a {
   text-decoration: none;
 }
-
-.main-body {
-  background-color: Black;
-  color: white;
-  display: block;
-  width: 100%;
-  }
 
 .body-media {
   background-color: #552583;
@@ -613,7 +712,6 @@ border-color: gold;
 .container ul,li {
   list-style: none;
   list-style-position: inside;
-  padding: 0;
 }
 
 .blog-post {
@@ -647,25 +745,36 @@ border-color: gold;
   border-radius: 20px;
 }
 
-.button1 {
+.buttonp {
+  height: 7.3%;
+  margin-left: 14.4%;
+  position: fixed;
+  bottom: 18.7%;
+  width: 75.5%;
+
+}
+
+ .button1  {
   width: 19.8%;
-  height: 7.6%;
-  /* padding: 1.5%; */
+  height: 7.3%;
   background-color: rgba(0, 0, 0, 0);
   float: left;
   color: rgba(255, 0, 0, 0);
   position: fixed;
-}
+ }
 
 .button1:hover {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("/projects/rps/Rock.jpg");
+  opacity: 0.3;
+  border-style: none;
 }
 
 .button2 {
   width: 19.9%;
-  height: 7.6%;
+  height: 7.3%;
   margin-left: 27.8%;
-  /* padding: 1.5%; */
+  background-image: url("/rps/Rock.jpg");
   background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 0, 0, 0);
   position: fixed;
@@ -673,12 +782,14 @@ border-color: gold;
 
 .button2:hover {
   background-color: rgba(255, 255, 0, 0.5);
+  background-image: url("/projects/rps/Paper.jpg");
+  opacity: 0.7;
+  border-style: none;
 }
 
 .button3 {
   width: 19.8%;
-  height: 7.6%;
-  /* padding: 1.15% 9.8%; */
+  height: 7.3%;
   margin-left: 55.7%;
   background-color: rgba(255, 0, 0, 0);
   float: right;
@@ -688,14 +799,9 @@ border-color: gold;
 
 .button3:hover {
   background-color: rgba(0, 0, 255, 0.5);
-}
-
-.buttonp {
-  margin-left: 14.4%;
-  /* margin-bottom: -3.3%; */
-  position: fixed;
-  bottom: 26%;
-  width: 75.5%;
+  background-image: url("/projects/rps/Scissors.jpg");
+  opacity: 0.5;
+  border-style: none;
 }
 
 .contact-btn a:active {

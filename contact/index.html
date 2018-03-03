@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link type="text/css" rel="stylesheet" href="../css/style.css" >
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <title>Quintez Martin | Contact</title>
 </head>
@@ -13,12 +14,15 @@
     <header class="nav2">
       <nav>
         <a href="/">Home</a>
-        <a style="cursor:pointer">Projects</a>
-          <ul class="dropdown dropdown-content">
+        <button style="cursor:pointer" onclick="myFunction()" class="nav2">Projects <i class="fa fa-caret-down" style="display: inline;"></i></button>
+        <div class="dropdown">
+          <ul id="myDropdown" class="dropdown-content">
             <li><a href="https://twp2studentshowcase.netlify.com/">Class Showcase</a></li>
             <li><a href="/projects/choose-your-own-adventure">CYOA</a></li>
             <li><a href="/projects/rps">RPS</a></li>
+            <li><a href="https://bookstoreproject.netlify.com/">Bookstore</a></li>
           </ul>
+        </div>
         <a href="/media">Media</a>
         <a href="/blog">Blog</a>
         <a href="/contact">Contact</a>

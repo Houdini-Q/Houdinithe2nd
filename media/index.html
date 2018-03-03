@@ -5,24 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link type="text/css" rel="stylesheet" href="../css/style.css" >
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <title>Quintez Martin | Media</title>
 </head>
 <body class="body-media">
   <div class="wrapper">
-  <div class="medianav">
+  <header class="medianav">
     <nav>
       <a href="/">Home</a>
-      <a style="cursor:pointer">Projects</a>
-        <ul class="dropdown dropdown-content">
+      <button style="cursor:pointer" onclick="myFunction()" class="medianav">Projects <i class="fa fa-caret-down" style="display: inline;"></i></button>
+      <div class="dropdown">
+        <ul id="myDropdown" class="dropdown-content">
           <li><a href="https://twp2studentshowcase.netlify.com/">Class Showcase</a></li>
           <li><a href="/projects/choose-your-own-adventure">CYOA</a></li>
           <li><a href="/projects/rps">RPS</a></li>
+          <li><a href="https://bookstoreproject.netlify.com/">Bookstore</a></li>
         </ul>
+      </div>
       <a href="/media">Media</a>
       <a href="/blog">Blog</a>
       <a href="/contact">Contact</a>
     </nav>
-  </div>
+  </header>
   <div class="mediaspl"></div>
   <div id="mediaspr"></div>
   <br>
@@ -57,12 +61,15 @@
     </center>
   </div>
 <div id="mediab">
-<footer>
+<div class="bottom">
 <hr>
+</div>
+<footer>
   <p>&copy 2018 | Quintez Martin</p>
 </footer>
 </div>
 </div>
+<script type="text/javascript" src="media.js"></script>
 <script type="text/javascript" src="greeter.js"></script>
 <script type="text/javascript" src="greeting.js"></script>
 </body>

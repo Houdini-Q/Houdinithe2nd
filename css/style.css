@@ -80,55 +80,6 @@ html, body {
   background-color: rgba(255, 255, 0, 0.5);
 }
 
-#homepage-header {
-  font-weight: bold;
-  font-size: 300%;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 80px;
-}
-
-#homepage-header2 {
-  text-align: center;
-  font-weight: bold;
-  box-sizing: content-box;
-  width: 400px;
-  margin:0 auto;
-  margin-bottom: 100px;
-  background-color: rgba(100, 100, 100, 0.1);
-  font-family: "Segoe Script";
-  border-radius: 10px;
-
-}
-
-#homepage-header3 {
-  padding: 50px;
-  color: #ECBA3E;
-  font-family: 'Chancery Cursive', serif;
-  font-size: 3em;
-  text-align: center;
-}
-
-#homepage-header3 hr {
-  background-color: black;
-  padding: 2px;
-  width: 15%;
-  border: none;
-  margin-top: -20px;
-}
-
-#homepage-about {
-background-color: rgba(100, 100, 100, 0);
-box-sizing: content-box;
-width: 600px;
-border-radius: 10px;
-list-style: none;
-text-align: center;
-font-size: 26px;
-padding: 10px;
-margin:0 auto;
-}
-
 #results {
   background-color: rgba(0, 0, 0, 0.5);
   margin-top: 11%;
@@ -420,26 +371,20 @@ border-color: gold;
 .homepage-navbar img {
   float: left;
   border-radius: 0;
-  top: 0;
-
-}
-
-#lastitem {
-  margin-right: 15px;
+  margin-top: 10px;
+  margin-left: 8px;
 }
 
 .homepage-navbar button {
-  padding: 10px 12px;
+  /* padding: 0px 12px 0px 12px; */
+  width: 90px;
   font-size: 15px;
-  background-image: none;
-  background-color: rgba(0, 0, 0, 0);
-  color: #fdb927;
+  text-align: center;
   border: none;
+  color: #fdb927;
  }
 
 .homepage-navbar button:hover {
-  padding: 10px 12px;
-  background-color: rgba(0, 0, 0, 0);
   color: #552583;
 }
 
@@ -448,20 +393,147 @@ border-color: gold;
 }
 
 .homepage-navbar a {
-  padding: 10.5px 8px;
+  padding: 26.1px 8px 26px 8px;
   text-decoration: none;
   color: #fdb927;
   text-align: center;
 }
 
 .homepage-navbar a:hover {
-  padding: 10.5px 8px;
   color: #552583;
 }
 
 .homepage-navbar ul {
   margin-left: -133px;
-  top: -2px;
+  top: 13px;
+}
+
+#lastitem {
+  margin-right: 15px;
+}
+
+/* Homepage style */
+.main-body {
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("/CTS.jpg");
+  background-position: center;
+  color: black;
+  }
+
+.main-body2 {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-image: url("/MeTux.jpg");
+  color: purple;
+  margin-top: -24px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid purple;
+}
+
+.main-body3 {
+  background-color: black;
+  color: #ECBA3E;
+  margin-top: -40px;
+}
+
+.main-body3 h2 {
+  padding: 50px;
+  color: #ECBA3E;
+  font-family: 'Times New Romans', serif;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: -30px;
+}
+
+.main-body3hr hr {
+  width: 25%;
+  background-color: #ECBA3E;
+  padding: 2px;
+  border: none;
+  margin-bottom: 70px;
+}
+
+/* Homepage content style */
+
+.empty {
+  width: 100%;
+  padding: 1px;
+}
+
+.homepage-header {
+  width: 35%;
+  font-family: arial;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 150px;
+  margin-left: 180px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+#homepage-header2 {
+  text-align: center;
+  font-weight: bold;
+  box-sizing: content-box;
+  width: 400px;
+  margin:0 auto;
+  margin-top: 100px;
+  font-family: "Segoe Script";
+  border-radius: 10px;
+
+}
+
+#homepage-header3 {
+  padding: 50px;
+  color: #ECBA3E;
+  font-family: 'Chancery Cursive', serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+#homepage-header3 hr {
+  background-color: black;
+  padding: 2px;
+  width: 15%;
+  border: none;
+  margin-top: -20px;
+}
+
+#homepage-about {
+background-color: rgba(100, 100, 100, 0);
+box-sizing: content-box;
+width: 600px;
+border-radius: 10px;
+list-style: none;
+text-align: center;
+font-size: 26px;
+padding: 10px;
+margin:0 auto;
+}
+
+.home-links {
+  text-align: center;
+  margin-right: 50px;
+  margin-bottom: 125px;
+}
+
+.home-links a {
+  text-decoration: none;
+  color: #fdb927;
+}
+
+.home-links a:hover {
+  color: #552583;
+}
+
+.home-links li {
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
 }
 
 /* Navigation bar for Media Page */
@@ -539,72 +611,6 @@ border-color: gold;
   top: 7px;
 }
 
-/* homepage style */
-.main-body {
-  height: 800px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("/CTS.jpg");
-  color: white;
-  margin-top: -21px;
-  }
-
-.main-body2 {
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: auto auto;
-  background-image: url("/MeTux.jpg");
-  color: purple;
-  margin-top: -24px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid purple;
-}
-
-.main-body3 {
-  background-color: black;
-  color: #ECBA3E;
-  margin-top: -40px;
-}
-
-.main-body3 h2 {
-  padding: 50px;
-  color: #ECBA3E;
-  font-family: 'Times New Romans', serif;
-  font-size: 3em;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: -30px;
-}
-
-.main-body3hr hr {
-  width: 25%;
-  background-color: #ECBA3E;
-  padding: 2px;
-  border: none;
-  margin-bottom: 70px;
-}
-
-.home-links {
-  text-align: center;
-  margin-right: 50px;
-  margin-bottom: 125px;
-}
-
-.home-links a {
-  text-decoration: none;
-  color: #fdb927;
-}
-
-.home-links a:hover {
-  color: #552583;
-}
-
-.home-links li {
-  display: inline-block;
-  padding: 0px 20px 0px 20px;
-}
-
 /* Project page nav bar */
 .pronav {
   padding: 20px 10px;
@@ -622,15 +628,15 @@ border-color: gold;
 }
 
 /*  */
-.navigation {
+/* .navigation {
   background-color: #552583;
   padding: 20px 70px;
-}
+} */
 
-.navigation a {
+/* .navigation a {
   color: #fdb927;
   padding: 0px 10px;
-}
+} */
 
 .list {
   color: blue;

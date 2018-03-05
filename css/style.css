@@ -381,7 +381,7 @@ border-color: gold;
   font-size: 15px;
   text-align: center;
   border: none;
-  color: #fdb927;
+  color: gold;
  }
 
 .homepage-navbar button:hover {
@@ -395,7 +395,7 @@ border-color: gold;
 .homepage-navbar a {
   padding: 26.1px 8px 26px 8px;
   text-decoration: none;
-  color: #fdb927;
+  color: gold;
   text-align: center;
 }
 
@@ -423,7 +423,7 @@ border-color: gold;
   }
 
 .main-body2 {
-  height: 600px;
+  height: 800px;
   background-repeat: no-repeat;
   background-size: auto auto;
   background-image: url("/MeTux.jpg");
@@ -508,10 +508,10 @@ border-color: gold;
 background-color: rgba(100, 100, 100, 0);
 box-sizing: content-box;
 width: 600px;
-border-radius: 10px;
+font-family: "gabriola";
 list-style: none;
 text-align: center;
-font-size: 26px;
+font-size: 20px;
 padding: 10px;
 margin:0 auto;
 }

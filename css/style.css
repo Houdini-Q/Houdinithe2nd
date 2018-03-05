@@ -397,6 +397,7 @@ border-color: gold;
   text-decoration: none;
   color: gold;
   text-align: center;
+  display: inline-block;
 }
 
 .homepage-navbar a:hover {

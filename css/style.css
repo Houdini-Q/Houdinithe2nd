@@ -470,6 +470,7 @@ border-color: gold;
 }
 
 .main-body3 {
+  min-width: 1000px;
   background-color: black;
   color: #ECBA3E;
   margin-top: -40px;
@@ -497,7 +498,7 @@ border-color: gold;
 
 .empty {
   width: 100%;
-  padding: .09%;
+  padding: 1px;
 }
 
 .homepage-header {
@@ -510,21 +511,10 @@ border-color: gold;
   margin-left: 13.35%;
   padding: 0%;
   text-transform: uppercase;
+  border: solid red;
 }
 
 #homepage-header2 {
-  text-align: center;
-  font-weight: bold;
-  box-sizing: content-box;
-  width: 400px;
-  margin:0 auto;
-  margin-top: 100px;
-  font-family: "Segoe Script";
-  border-radius: 10px;
-
-}
-
-#homepage-header3 {
   padding: 50px;
   color: #ECBA3E;
   font-family: 'Chancery Cursive', serif;
@@ -532,31 +522,28 @@ border-color: gold;
   text-align: center;
 }
 
-#homepage-header3 hr {
+#homepage-header2 hr {
   background-color: black;
   padding: 2px;
-  width: 15%;
+  width: 190px;
   border: none;
   margin-top: -20px;
 }
 
 #homepage-about {
 background-color: rgba(100, 100, 100, 0);
-box-sizing: content-box;
-width: 44.5%;
-height: 54%;
+width: 600px;
+height: 450px;
 font-family: "gabriola";
 list-style: none;
 text-align: center;
-font-size: 125%;
-padding: 1%;
+padding: 1px;
 margin:0 auto;
 overflow: hidden;
-border: solid red;
 }
 
 #homepage-about p {
-  overflow: hidden;
+  font-size: 125%;
 }
 
 .home-links {

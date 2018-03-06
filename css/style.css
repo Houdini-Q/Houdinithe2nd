@@ -502,16 +502,15 @@ border-color: gold;
 }
 
 .homepage-header {
-  width: 35%;
+  width: 472px;
   font-family: arial;
   font-size: 350%;
   font-weight: bold;
   text-align: left;
-  margin-top: 11.1%;
-  margin-left: 13.35%;
+  margin-top: 150px;
+  margin-left: 180px;
   padding: 0%;
   text-transform: uppercase;
-  border: solid red;
 }
 
 #homepage-header2 {
@@ -534,7 +533,7 @@ border-color: gold;
 background-color: rgba(100, 100, 100, 0);
 width: 600px;
 height: 450px;
-font-family: "gabriola";
+font-family: "gabriola", serif;
 list-style: none;
 text-align: center;
 padding: 1px;

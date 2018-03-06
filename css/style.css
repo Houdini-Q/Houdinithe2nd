@@ -267,7 +267,7 @@ border-color: gold;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(255,200,200,0.7);
+  box-shadow: 5px 8px 2px 2px rgba(255,200,200,0.7);
   font-weight: bold;
   overflow: auto;
   text-align: center;
@@ -383,15 +383,16 @@ border-color: gold;
   margin-top: 7px;
   width: 175px;
   float: left;
+  text-align: center;
 }
 
 .homepage-navbar button {
-  font-size: 16px;
+  font-size: 17px;
   font-family: serif;
   text-align: center;
   float: right;
   min-width: 100px;
-  padding-bottom: 4px;
+  padding-bottom: 2.3px;
   border: none;
   color: gold;
  }
@@ -418,19 +419,20 @@ border-color: gold;
 }
 
 .homepage-navbar ul > li > a {
-  padding: 10px 55px;
+  padding: 10px 60px;
   text-align: center;
+  background-color: black;
 }
 
 .homepage-navbar ul > li > a:hover {
   background-color: #ddd;
-  padding: 10px 55px;
+  padding: 10px 60px;
   /* margin-left: 15px; */
 }
 
 .homepage-navbar ul {
-  margin-left: 40px;
-  top: 56px;
+  margin-left: 30px;
+  top: 55.6px;
 }
 
 #lastitem {
@@ -438,21 +440,18 @@ border-color: gold;
 }
 
 /* Homepage style */
+
 #homepage {
-  /* max-width: 100%; */
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .main-body {
   height: 800px;
   min-width: 1000px;
-  /* margin-right: -100px; */
-  /* background-repeat: no-repeat; */
   background-size: 100% 100%;
   background-image: url("/CTS.jpg");
-  /* background-position: center; */
   color: black;
-  /* background-color: green; */
   overflow: hidden;
   }
 
@@ -483,6 +482,7 @@ border-color: gold;
   font-size: 3em;
   text-align: center;
   font-weight: bold;
+  margin: 0 auto;
   margin-bottom: -30px;
 }
 
@@ -491,6 +491,7 @@ border-color: gold;
   background-color: #ECBA3E;
   padding: 2px;
   border: none;
+  margin: 0 auto;
   margin-bottom: 70px;
 }
 
@@ -547,7 +548,7 @@ overflow: hidden;
 
 .home-links {
   text-align: center;
-  margin-right: 50px;
+  margin: 0 auto;
   margin-bottom: 125px;
 }
 
@@ -729,7 +730,9 @@ overflow: hidden;
 
 .bottom {
     position: relative;
-    bottom: 0;
+    bottom: 0 auto;
+    padding-bottom: 1px;
+    padding-left: 10px;
     font-size: 0.75rem;
 }
 

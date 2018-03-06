@@ -335,21 +335,19 @@ border-color: gold;
   height: 70px;
   background-color: black;
   overflow: hidden;
+  text-align: right;
 }
 
 .homepage-navbar img {
-  /* float: left; */
   border-radius: 0;
-  margin-top: 8px;
+  margin-top: 7px;
   width: 175px;
-  margin-left: 10px;
-  /* padding: .5%; */
-
+  float: left;
+  border: solid blue;
 }
 
 .homepage-navbar button {
   margin-top: -5px;
-  float: right;
   padding: 5px 10px;
   font-size: 15px;
   text-align: center;
@@ -368,13 +366,15 @@ border-color: gold;
 }
 
 .homepage-navbar a {
-  /* padding: 26.1px 8px 26px 8px; */
+  padding: 23px 8px 23px 8px;
   text-decoration: none;
   color: gold;
   text-align: center;
-  display: inline;
+
+  /* display: inline; */
   float: right;
-  max-width: 5%;
+  width: 60px;
+  border: solid red;
 }
 
 .homepage-navbar a:hover {

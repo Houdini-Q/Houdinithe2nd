@@ -45,6 +45,12 @@ html, body {
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .bottom hr {
   margin-top: 8%;
  }
@@ -325,26 +331,19 @@ border-color: gold;
 
 /* Navigation bar for Home Page */
 .homepage-navbar {
-  /* box-sizing: border-box; */
-  padding: 26px;
   min-width: 1000px;
-  /* max-width: 1700px; */
-  /* width: 100%; */
-  /* max-height: 500px; */
+  height: 70px;
   background-color: black;
   overflow: hidden;
 }
 
 .homepage-navbar img {
   /* float: left; */
-  /* margin-right: 70%; */
   border-radius: 0;
-  /* display: inline; */
-  /* margin-top: -.6%; */
-  /* margin-bottom: 500px; */
-  /* margin-left: 1.2%; */
+  margin-top: 8px;
+  width: 175px;
+  margin-left: 10px;
   /* padding: .5%; */
-  /* width: 10%; */
 
 }
 
@@ -398,7 +397,7 @@ border-color: gold;
 
 /* Homepage style */
 #homepage {
-  max-width: 1700px;
+  max-width: 100%;
   margin: 0 auto;
 
 
@@ -406,6 +405,7 @@ border-color: gold;
 
 .main-body {
   height: 800px;
+  min-width: 1000px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("/CTS.jpg");

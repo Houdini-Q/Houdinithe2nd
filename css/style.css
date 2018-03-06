@@ -251,44 +251,6 @@ border-color: gold;
   margin-right: 12%;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(255,200,200,0.7);
-  font-weight: bold;
-  overflow: auto;
-  text-align: center;
-  padding: 0;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: #552583;
-  padding: 4px 12px;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  list-style: none;
-  /* border-bottom: solid; */
-  /* border-left: solid; */
-  /* border-right: solid; */
-}
-
-.dropdown a:hover {
-  background-color: #ddd;
-}
-
-.show {
-  display: block;
-}
-
 .nav-cyoa {
   margin-top: -7px;
   margin-left:-8px;
@@ -363,25 +325,39 @@ border-color: gold;
 
 /* Navigation bar for Home Page */
 .homepage-navbar {
-  height: 70px;
+  /* box-sizing: border-box; */
+  padding: 26px;
+  min-width: 1000px;
+  /* max-width: 1700px; */
+  /* width: 100%; */
+  /* max-height: 500px; */
   background-color: black;
-  text-align: right;
+  overflow: hidden;
 }
 
 .homepage-navbar img {
-  float: left;
+  /* float: left; */
+  /* margin-right: 70%; */
   border-radius: 0;
-  margin-top: 10px;
-  margin-left: 8px;
+  /* display: inline; */
+  /* margin-top: -.6%; */
+  /* margin-bottom: 500px; */
+  /* margin-left: 1.2%; */
+  /* padding: .5%; */
+  /* width: 10%; */
+
 }
 
 .homepage-navbar button {
-  /* padding: 0px 12px 0px 12px; */
-  height: 40px;
+  margin-top: -5px;
+  float: right;
+  padding: 5px 10px;
   font-size: 15px;
   text-align: center;
   border: none;
+  display: inline;
   color: gold;
+  width: 7%;
  }
 
 .homepage-navbar button:hover {
@@ -393,15 +369,22 @@ border-color: gold;
 }
 
 .homepage-navbar a {
-  padding: 26.1px 8px 26px 8px;
+  /* padding: 26.1px 8px 26px 8px; */
   text-decoration: none;
   color: gold;
   text-align: center;
-  display: inline-block;
+  display: inline;
+  float: right;
+  max-width: 5%;
 }
 
 .homepage-navbar a:hover {
   color: #552583;
+}
+
+.homepage-navbar li {
+  text-align: center;
+  width: 100px;
 }
 
 .homepage-navbar ul {
@@ -414,6 +397,13 @@ border-color: gold;
 }
 
 /* Homepage style */
+#homepage {
+  max-width: 1700px;
+  margin: 0 auto;
+
+
+}
+
 .main-body {
   height: 800px;
   background-repeat: no-repeat;
@@ -421,17 +411,20 @@ border-color: gold;
   background-image: url("/CTS.jpg");
   background-position: center;
   color: black;
+  overflow: hidden;
   }
 
 .main-body2 {
   height: 800px;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: auto auto;
+  background-size: cover;
+  background-position: top;
   background-image: url("/MeTux.jpg");
   color: purple;
-  margin-top: -24px;
   border-top: 2px solid black;
   border-bottom: 2px solid purple;
+  overflow: hidden;
 }
 
 .main-body3 {
@@ -441,7 +434,7 @@ border-color: gold;
 }
 
 .main-body3 h2 {
-  padding: 50px;
+  padding: 3.7%;
   color: #ECBA3E;
   font-family: 'Times New Romans', serif;
   font-size: 3em;
@@ -462,18 +455,18 @@ border-color: gold;
 
 .empty {
   width: 100%;
-  padding: 1px;
+  padding: .09%;
 }
 
 .homepage-header {
   width: 35%;
   font-family: arial;
-  font-size: 3.5em;
+  font-size: 350%;
   font-weight: bold;
   text-align: left;
-  margin-top: 150px;
-  margin-left: 180px;
-  padding: 0;
+  margin-top: 11.1%;
+  margin-left: 13.35%;
+  padding: 0%;
   text-transform: uppercase;
 }
 
@@ -508,13 +501,20 @@ border-color: gold;
 #homepage-about {
 background-color: rgba(100, 100, 100, 0);
 box-sizing: content-box;
-width: 600px;
+width: 44.5%;
+height: 54%;
 font-family: "gabriola";
 list-style: none;
 text-align: center;
-font-size: 20px;
-padding: 10px;
+font-size: 125%;
+padding: 1%;
 margin:0 auto;
+overflow: hidden;
+border: solid red;
+}
+
+#homepage-about p {
+  overflow: hidden;
 }
 
 .home-links {
@@ -697,6 +697,47 @@ margin:0 auto;
 .body-blog {
   background: black;
   color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255,200,200,0.7);
+  font-weight: bold;
+  overflow: auto;
+  text-align: center;
+  padding: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #552583;
+  padding: 4px 12px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  list-style: none;
+  width: 0;
+  z-index: 1;
+  margin: 0 auto;
+  /* border-bottom: solid; */
+  /* border-left: solid; */
+  /* border-right: solid; */
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
 
 .bottom {

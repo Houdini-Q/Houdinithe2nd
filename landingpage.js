@@ -1,4 +1,5 @@
 
+// Highlights the About Me content and changes the color 
 $('ol').on('mouseover', () => {
   $('ol').addClass('highlighted');
 })

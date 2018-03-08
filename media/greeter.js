@@ -1,6 +1,6 @@
 // alerts a greeting based on name.
 
-alert('Welcome to my petty page!');
+alert('Welcome to my Media page!');
 
 var name = prompt('What is your name?');
 

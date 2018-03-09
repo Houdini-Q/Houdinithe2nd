@@ -27,103 +27,102 @@ var computerScore = 0;
 var tieScore = 0;
 
 
-// if computer wins - computer score ++;
-//
-// if user wins - userScore ++;
+alert("Choose Rock, Paper, or Scissors by pressing the 'Rock', 'Paper', or 'Scissor' button");
 
-// var gameRound = function() {
-//
-// }
-
-// while (1 < 5) {
-// gameRound()
-// if (userScore === 3){
-// console.log("userWins")
-// result = "You Win!"
-// break
-// } else if (computerScore === 3) {
-// console.log("computerWins")
-// result = "Computer Wins"
-// break
-// } else {gameRound()}
-// }
-//
-// var output = document.querySelector('#results');
-//
-// output.innerHTML = "<p>"result"</p>";
-
-
-var userWins = "You win!";
-var computerWins = "The Computer wins!";
-var ties = "It's a tie!"
+var userWins = "<p>You win!</p>";
+var computerWins = "<p>The Computer wins!</p>";
+var tie = "<p>It's a tie!</p>";
 var roundCounter = 0;
 
-var rock = function() {
 
+function rockChoice() {
+  userChoice = "Rock";
+  // computerChoice = "";
+  console.log("Chose Rock");
+  gameRound();
 }
-var gameRound = function() {
-    var userChoice = prompt("Choose Rock, Paper, or Scissors by typing 'R', 'P', or 'S'");
-    var rng = Math.random();
-    var computerChoice = "R";
 
-    if(rng > 0.66) {
-        computerChoice = "P";
+var paperChoice = function() {
+  userChoice = "Paper";
+  console.log("Chose Paper");
+  gameRound();
+}
+
+var scissorsChoice = function() {
+  userChoice = "Scissors"
+  console.log("Chose Scissors");
+  gameRound();
+}
+
+var gameRound = function() {
+    var userChoice = "";
+    var rng = Math.random();
+    var computerChoice = "Rock";
+
+    if (rng > 0.99) {
+      computerChoice = "Rock";
+      console.log("Comp Rock");
+    } else if (rng > 0.66) {
+        computerChoice = "Paper";
+        console.log("Comp Paper");
     } else if (rng > 0.33) {
-        computerChoice = "S";
+        computerChoice = "Scissors";
+        console.log("Comp Scissors");
     }
 
-    if(computerChoice !== userChoice){
-        if(computerChoice === "R"){
-            if (userChoice === "S") {
-                alert(computerWins);
+    if (computerChoice !== userChoice) {
+        if (computerChoice === true) {
+            if (userChoice === "Scissors") {
+                output.innerHTML = computerWins;
                 computerScore ++;
-            } else {
-                alert(userWins);
+            } else if (userChoice === "Paper") {
+                output.innerHTML = userWins;
                 userScore ++;
             }
-        } else if (computerChoice === "P") {
-            if( userChoice === "R") {
-                alert(computerWins);
+        } else if (computerChoice === "Paper") {
+            if ( userChoice === "Rock") {
+                output.innerHTML = computerWins;
                 computerScore ++;
             } else {
-                alert(userWins);
+                output.innerHTML = userWins;
                 userScore ++;
             }
         } else {
-            if( userChoice === "P") {
-                alert(computerWins);
+            if( userChoice === "Paper") {
+                output.innerHTML = computerWins;
                 computerScore ++;
             } else {
-                alert(userWins);
+                output.innerHTML = userWins;
                 userScore ++;
             }
         }
     } else {
-        alert('Tie!');
+        output.innerHTML = tie;
         tieScore ++;
     }
 };
 
-//while (roundCounter < 5) {
-//     gameRound();
-//     roundCounter++;
-// }
+
 var output = document.querySelector('#results');
 
-while (roundCounter < 5) {
-gameRound();
-roundCounter++;
-if (userScore === 3){
-console.log("userWins");
-output.innerHTML = "<p>You Win!</p>";
-break
-} else if (computerScore === 3) {
-console.log("computerWins");
-output.innerHTML = "<p>The Computer Wins!</p>";
-break
-} else if (computerScore === 2 && userScore === 2 && tieScore < 1) {
-  console.log("ties");
-  output.innerHTML = "<p>It is a tie!</p>";
-break
-} else {gameRound();}
-};
+// while (roundCounter < 5) {
+// gameRound();
+// roundCounter++;
+// if (userScore === 3){
+// console.log("userWins");
+// output.innerHTML = "<p>You Win!</p>";
+// break
+// } else if (computerScore === 3) {
+// console.log("computerWins");
+// output.innerHTML = "<p>The Computer Wins!</p>";
+// break
+// } else if (computerScore === 2 && userScore === 2 && tieScore < 1) {
+//   console.log("ties");
+//   output.innerHTML = "<p>It is a tie!</p>";
+// break
+// } else {gameRound();}
+// };
+
+// $("#rocky").on("click", rockChoice());
+// $("#papery").on("click", paperChoice());
+// $("#scissory").on("click", scissorsChoice());

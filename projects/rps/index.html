@@ -7,7 +7,7 @@
   <link rel="icon" type="image/jpg" href="/Favicon.jpg">
   <link type="text/css" rel="stylesheet" href="/css/style.css" >
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <title>Quintez Martin | Rock Paper Scissors</title>
 </head>
 <body class="body-rps">
@@ -31,18 +31,19 @@
   <div>
     <h1><center></center></h1>
   </div>
-  <div id="results"></div>
+  <div id="results">
+    <p> </p>
+  </div>
   <div class="buttonp">
-    <button style="cursor:pointer" class="button1" onclick="">Rock</button>
-    <button style="cursor:pointer" class="button2" onclick="">Paper</button>
-    <button style="cursor:pointer" class="button3" onclick="">Scissors</button>
+    <button id="rocky" style="cursor:pointer" class="button1" onclick="rockChoice()">Rock</button>
+    <button id="papery" style="cursor:pointer" class="button2" onclick="paperChoice()">Paper</button>
+    <button id="scissory" style="cursor:pointer" class="button3" onclick="scissorsChoice()">Scissors</button>
   </div>
   <div class="rpfooter">
   <footer>
-  <hr>
-    <p>&copy 2018 | Quintez Martin</p>
+    <p>Copyright &copy 2017-2018 Quintez Martin | All Rights Reserved.</p>
   </footer>
   </div>
-  <script type="text/javascript" src="rps.js"></script>
+  <script defer type="text/javascript" src="rps.js"></script>
 </body>
 </html>

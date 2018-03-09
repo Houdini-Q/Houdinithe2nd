@@ -72,27 +72,6 @@ ul {
   background-color: rgba(255, 255, 0, 0.5);
 }
 
-#results {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 11%;
-  /* margin: 0; */
-  width: 12%;
-  /* margin-right: auto; */
-  margin-left: 45%;
-  border-radius: 100%;
-  text-align: center;
-  position: fixed;
-
-}
-
-#results p {
-  color: silver;
-  font-size: 175%;
-  padding: 10%;
-  text-align: center;
-
-}
-
 #input {
   box-sizing: border-box;
   background-color: #e1e1db;
@@ -816,10 +795,9 @@ border-color: gold;
 /* Rock Paper Scissors Page Navbar */
 
 .nav-rps {
-  min-width: 1000px;
+  min-width: 1400px;
   background-image: url("/projects/rps/Black_wood.jpg");
   background-color: white;
-  /* background-size: auto auto; */
   color: black;
 }
 
@@ -834,7 +812,7 @@ border-color: gold;
   background-image: none;
   background-color: rgba(10, 10, 10, 0);
   font-family: serif;
-  font-size: 17px;
+  font-size: 16.5px;
 }
 
 .nav-rps button:hover {
@@ -848,7 +826,6 @@ border-color: gold;
   text-decoration: none;
   color: black;
   text-align: center;
-  display: inline-block;
   list-style: none;
 }
 
@@ -889,38 +866,45 @@ top: 18px;
 /* Rock Paper Scissor Page Style  */
 
 .body-rps {
-  background-image: url("http://www.conduithub.com/hubfs/Blog_images/shutterstock_101305453.jpg?t=1516963838286");
+  box-sizing: border-box;
+  min-width: 1000px;
+  background-image: url("/projects/rps/RPSbg.jpg");
   background-color: black;
   color: silver;
-  background-size: 100% 100%;
-  position: fixed;
+  background-repeat: no-repeat;
 }
 
-.bottom {
-    position: relative;
-    bottom: 0 auto;
-    padding-bottom: 1px;
-    padding-left: 10px;
-    font-size: 0.75rem;
-    min-width: 1000px;
+#results {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 230px;
+  max-width: 180px;
+  height: 72px;
+  margin-left: 633px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+#results p {
+  color: silver;
+  font-size: 20px;
+  padding-top: 23px;
+  text-align: center;
 }
 
 .buttonp {
-  height: 7.3%;
-  margin-left: 14.4%;
-  position: fixed;
-  bottom: 18.7%;
-  width: 75.5%;
-
+  margin-top: 11.5em;
+  margin-left: 200px;
+  bottom: 200px;
+  width: 1055px;
+  height: 48px;
 }
 
- .button1  {
-  width: 19.8%;
-  height: 7.3%;
+.button1  {
+  width: 278px;
+  height: 55px;
   background-color: rgba(0, 0, 0, 0);
   float: left;
   color: rgba(255, 0, 0, 0);
-  position: fixed;
  }
 
 .button1:hover {
@@ -931,13 +915,11 @@ top: 18px;
 }
 
 .button2 {
-  width: 19.9%;
-  height: 7.3%;
-  margin-left: 27.8%;
-  background-image: url("/rps/Rock.jpg");
+  width: 280px;
+  height: 55px;
+  margin-left: 112px;
   background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 0, 0, 0);
-  position: fixed;
 }
 
 .button2:hover {
@@ -948,13 +930,12 @@ top: 18px;
 }
 
 .button3 {
-  width: 19.8%;
-  height: 7.3%;
-  margin-left: 55.7%;
+  width: 277px;
+  height: 55px;
+  margin-right: -4px;
   background-color: rgba(255, 0, 0, 0);
   float: right;
   color: rgba(255, 0, 0, 0);
-  position: fixed;
 }
 
 .button3:hover {
@@ -965,9 +946,11 @@ top: 18px;
 }
 
 .rpfooter {
-  width: 100%;
-  bottom: 0;
-  position: fixed;
+  /* position: absolute; */
+  min-width: 1400px;
+  bottom: 0px;
+  border-top: solid;
+  margin-top: 100px;
   font-size: 0.75rem;
 }
 
@@ -980,6 +963,15 @@ top: 18px;
 
 .space {
   margin-bottom: 8%;
+}
+
+.bottom {
+    position: relative;
+    bottom: 0 auto;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    font-size: 0.75rem;
+    min-width: 1000px;
 }
 
 .footer {

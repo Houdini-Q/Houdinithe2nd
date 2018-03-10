@@ -55,19 +55,6 @@ ul {
   margin-top: 8%;
  }
 
-#greeting {
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-  margin: 0 auto;
-  width: 50%;
-}
-
-#greeting p {
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
-
 #tint {
   background-color: rgba(255, 255, 0, 0.5);
 }
@@ -347,6 +334,7 @@ overflow: hidden;
 }
 
 /* Navigation bar for Media Page */
+
 .medianav {
   background-color: #fdb927;
   color: #552583;
@@ -354,7 +342,7 @@ overflow: hidden;
   font-family: sans-serif;
   padding: 0;
   border: none;
-  min-width: 1180px;
+  min-width: 1367px;
 }
 
 .medianav button {
@@ -395,68 +383,78 @@ overflow: hidden;
 .body-media {
   background-color: #552583;
   color: #FDB927;
-  width: 100%;
-  display: block;
-  height: 100%;
+  min-width: 1000px;
 }
 
-.videoWrapper {
-	position: relative;
-	padding-bottom: 32%;
-  width: 55%;
-  height: 0;
-  margin: 0 auto;
-}
+.videoWrapper h2 {
+  margin-left: 610px;
+  margin-bottom: 30px;
+ }
+
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 700px;
+	height: 500px;
+  margin-left: 330px;
 }
 
-.media h1 {
-  align: center;
-  /* border-style: ridge; */
+.media {
+  width: 500px;
   text-align: center;
+  margin-left: 425px;
   margin-bottom: 150px;
 }
 
 #mediaspl {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
-  height: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2560px;
   opacity: 0.5;
   width: 162px;
-  border: solid red;
-  float: left;
+  border-bottom: -17px
 }
 
 #mediaspr {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
-  height: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2560px;
   transform: scaleX(-1);
   opacity: 0.5;
   width: 162px;
-  margin-left: 1180px;
-  border: solid brown;
+  margin-top: -2560px;
+  margin-left: 1205px;
+  margin-bottom: -17px;
 }
 
-#mediab {
-  height: 25px;
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  bottom: 0px;
+#greeting {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  margin-left: 425px;
+  margin-top: -2460px;
+  width: 500px;
 }
 
-#mediab p {
-  font-size: 0.75rem;
+#greeting p {
+  color: white;
+  padding: 15px;
   text-align: center;
 }
 
+#mediab {
+  width: 1043px;
+  bottom: 0px;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-left: 162px;
+}
+
 #mediab hr {
-  margin-left: 12%;
-  margin-right: 12%;
+  margin-top: 165px;
+}
+
+.space {
+  margin-bottom: 150px;
 }
 
 /*Navigation bar for the contact page and blog page*/
@@ -651,12 +649,6 @@ overflow: hidden;
 .list a {
   text-decoration: none;
 }
-
-.wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
 
 .body-projects {
   box-sizing: border-box;
@@ -959,10 +951,6 @@ top: 18px;
 .contact-btn a:active {
   position: relative;
   bottom: 2px;
-}
-
-.space {
-  margin-bottom: 8%;
 }
 
 .bottom {

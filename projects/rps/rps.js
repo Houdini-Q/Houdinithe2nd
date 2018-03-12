@@ -1,12 +1,12 @@
-
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+//
+//
+// /* When the user clicks on the button,
+// toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
-// Close the dropdown if the user clicks outside of it
+//
+// // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.nav-rps')) {
 
@@ -20,110 +20,63 @@ window.onclick = function(event) {
     }
   }
 }
-
+var bt = document.querySelector('.buttonp');
 //Greets player with alert and instructions
 alert("Choose Rock, Paper, or Scissors by pressing the 'Rock', 'Paper', or 'Scissor' button");
 
-var result = "";
-var userScore = 0;
-var computerScore = 0;
-var tieScore = 0;
-var userWins = "<p>You win!</p>";
-var computerWins = "<p>The Computer wins!</p>";
-var tie = "<p>It's a tie!</p>";
-var roundCounter = 1;
+
+function generate(e) {
+  var userWins = "<p>You win!</p>";
+  var computerWins = "<p>The Computer wins!</p>";
+  var tie = "<p>It's a tie!</p>";
+  var btnClicked = e.target;
+  var userChoice = btnClicked.id;
+  var compOptions = [
+    "rock",
+    "paper",
+    "scissors"
+  ];
 
 
-function rockChoice() {
-   userChoice = "Rock";
-   console.log("Chose Rock");
-  gameRound();
-}
-
-function paperChoice() {
-  userChoice = "Paper";
-  console.log("Chose Paper");
-  gameRound();
-}
-
-function scissorsChoice() {
-  userChoice = "Scissors"
-  console.log("Chose Scissors");
-  gameRound();
-}
+  var randomNum = Math.floor(Math.random() * 3);
+  var compChoice = compOptions[randomNum];
+  var output = document.querySelector('#results');
 
 
-function gameRound(computerChoice) {
-    var userChoice = ""
-    var rng = Math.random();
-    var computerChoice = "";
-    var output = document.querySelector('#results');
-
-    if (rng > 0.66) {
-        computerChoice = "Paper";
-        console.log("Comp Paper");
-    } else if (rng > 0.33) {
-        computerChoice = "Scissors";
-        console.log("Comp Scissors");
-    }
-    else {
-      computerChoice = "Rock";
-      console.log("Comp Rock");
-    }
-
-
-    if (userChoice !== computerChoice) {
-        if (userChoice === "Rock") {
-            if (computerChoice === "Scissors") {
-                output.innerHTML = userWins;
-                userScore ++;
-            } else {
-                output.innerHTML = computerWins;
-                computerScore ++;
-            }
-        } else if (userChoice === "Paper") {
-            if (computerChoice === "Rock") {
-                output.innerHTML = userWins;
-                userScore ++;
-            } else {
-                output.innerHTML = computerWins;
-                computerScore ++;
-            }
-        } else if (userChoice === "Scissors") {
-            if (computerChoice === "Paper") {
-                output.innerHTML = userWins;
-                userScore ++;
-            } else {
-                output.innerHTML = computerWins;
-                computerScore ++;
-            }
-        }
-    } else {
+  switch(userChoice) {
+    case "rock":
+      if(compChoice === "paper") {
+        output.innerHTML = computerWins;
+      } else if(compChoice === "scissors") {
+        output.innerHTML = userWins;
+      } else if(compChoice === "rock") {
         output.innerHTML = tie;
-        tieScore ++;
+      }
+    break;
+
+    case "paper":
+    if(compChoice === "paper") {
+      output.innerHTML = tie;
+    } else if(compChoice === "scissors") {
+      output.innerHTML = computerWins;
+    } else if(compChoice === "rock") {
+      output.innerHTML = userWins;
     }
-};
+    break;
+    case "scissors":
+    if(compChoice === "paper") {
+      output.innerHTML = userWins;
+    } else if(compChoice === "scissors") {
+      output.innerHTML = tie;
+    } else if(compChoice === "rock") {
+      output.innerHTML = computerWins;
+    }
+    break;
+  }
+}
 
- // var output = document.querySelector('#results');
+bt.addEventListener('click', function(e) {
+    e.preventDefault();
+    generate(e);
 
-// while (roundCounter < 5) {
-// gameRound();
-// roundCounter++;
-// if (userScore === 3){
-// console.log("userWins");
-// output.innerHTML = "<p>You Win!</p>";
-// break
-// } else if (computerScore === 3) {
-// console.log("computerWins");
-// output.innerHTML = "<p>The Computer Wins!</p>";
-// break
-// } else if (computerScore === 2 && userScore === 2 && tieScore < 1) {
-//   console.log("ties");
-//   output.innerHTML = "<p>It is a tie!</p>";
-// break
-// } else {gameRound();}
-// };
-
-// $("#rocky").on("click", rockChoice());
-// $("#papery").on("click", paperChoice());
-// $("#scissory").on("click", scissorsChoice());
+  }, false);

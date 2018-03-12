@@ -810,11 +810,11 @@ border-color: gold;
 .nav-rps button:hover {
   background-color: rgba(10, 10, 10, 0.6);
   color: white;
-  padding: 13x 16px;
+  padding: 13px 16px;
 }
 
 .nav-rps a {
-  padding: 14px 16px;
+  padding: 15px 16px;
   text-decoration: none;
   color: black;
   text-align: center;
@@ -824,7 +824,7 @@ border-color: gold;
 .nav-rps a:hover {
   background-color: rgba(10, 10, 10, 0.6);
   color: white;
-  padding: 14px 16px;
+  padding: 15px 16px;
 }
 
 .nav-rps ul > li {

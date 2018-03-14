@@ -21,6 +21,7 @@ window.onclick = function(event) {
   }
 }
 var bt = document.querySelector('.buttonp');
+
 //Greets player with alert and instructions
 alert("Choose Rock, Paper, or Scissors by pressing the 'Rock', 'Paper', or 'Scissor' button");
 

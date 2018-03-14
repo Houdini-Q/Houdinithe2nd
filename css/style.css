@@ -12,9 +12,9 @@
 
 @font-face {
   font-family: 'Wakanda';
-  src: url('css/fonts/wakandaforever-regular-webfont.woff2') format('woff2'),
-       url('css/fonts/wakandaforever-regular-webfont.woff') format('woff'),
-       url('css/fonts/wakandaforever-regular-webfont.ttf') format('.ttf');
+  src: url('/css/fonts/wakandaforever-regular-webfont.woff2') format('woff2'),
+       url('/css/fonts/wakandaforever-regular-webfont.woff') format('woff'),
+       url('/css/fonts/wakandaforever-regular-webfont.ttf') format('.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,6 +33,15 @@
   src: url('/css/fonts/turtles-webfont.woff2') format('woff2'),
        url('/css/fonts/turtles-webfont.woff') format('woff'),
        url('/css/fonts/Turtles.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Naughty Cartoons';
+  src: url('/css/fonts/naughty_cartoons-webfont.woff2') format('woff2'),
+       url('/css/fonts/naughty_cartoons-webfont.woff') format('woff'),
+       url('/css/fonts/Naughty-Cartoons.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -938,12 +947,42 @@ top: 18px;
 }
 
 .rpfooter {
-  /* position: absolute; */
   min-width: 1400px;
   bottom: 0px;
   border-top: solid;
   margin-top: 100px;
   font-size: 0.75rem;
+}
+
+/* Snake Game Style */
+
+.snakebg {
+  background-image: url("/projects/snake_game/snakeBg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.snakeh {
+  text-align: center;
+  background-position: center;
+  background-image: url("/projects/snake_game/snake_game.png");
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 800px;
+  height: 200px;
+}
+
+.snake_play {
+  background-position: center;
+  background-image: url("/projects/snake_game/play_button.png");
+  background-color: rgba(255, 0, 0, 0);
+  margin-left: 42.5%;
+  margin-top: 40px;
+  margin-bottom: 150px;
+  width: 200px;
+  height: 80px;
+  cursor: pointer;
+  border: none;
 }
 
 /* Extra */

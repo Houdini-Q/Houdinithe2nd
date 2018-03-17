@@ -1,4 +1,25 @@
 
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.homepage-navbar')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 // The function gets called when the window is fully loaded
 window.onload = function() {
     // Get the canvas and context
@@ -14,7 +35,7 @@ window.onload = function() {
     var initialized = false;
 
     // Images
-    var images = [];
+    var images = ["/projects/snake_game/grass.jpg"];
     var tileimage;
 
     // Image loading global variables
@@ -270,17 +291,17 @@ window.onload = function() {
 
             // Draw a progress bar
             var loadpercentage = loadcount/loadtotal;
-            context.strokeStyle = "#ff8080";
-            context.lineWidth=3;
-            context.strokeRect(18.5, 0.5 + canvas.height - 51, canvas.width-37, 32);
-            context.fillStyle = "#ff8080";
-            context.fillRect(18.5, 0.5 + canvas.height - 51, loadpercentage*(canvas.width-37), 32);
+            // context.strokeStyle = "#ff8080";
+            // context.lineWidth=3;
+            // context.strokeRect(18.5, 0.5 + canvas.height - 51, canvas.width-37, 32);
+            // context.fillStyle = "#ff8080";
+            // context.fillRect(18.5, 0.5 + canvas.height - 51, loadpercentage*(canvas.width-37), 32);
 
             // Draw the progress text
-            var loadtext = "Loaded " + loadcount + "/" + loadtotal + " images";
-            context.fillStyle = "#000000";
-            context.font = "16px Verdana";
-            context.fillText(loadtext, 18, 0.5 + canvas.height - 63);
+            // var loadtext = "Loaded " + loadcount + "/" + loadtotal + " images";
+            // context.fillStyle = "#000000";
+            // context.font = "16px Verdana";
+            // context.fillText(loadtext, 18, 0.5 + canvas.height - 63);
 
             if (preloaded) {
                 initialized = true;
@@ -388,11 +409,15 @@ window.onload = function() {
         framecount++;
     }
 
+    var img = document.getElementById('source');
+
+
     // Render the game
     function render() {
         // Draw background
-        context.fillStyle = "#577ddb";
-        context.fillRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(img, 0, 0, canvas.width, canvas.height);
+        // context.fillStyle = "rgba(188, 174, 118, 1)";
+        // context.fillRect(0, 0, canvas.width, canvas.height);
 
         drawLevel();
         drawSnake();
@@ -420,17 +445,20 @@ window.onload = function() {
                 // Draw tiles based on their type
                 if (tile == 0) {
                     // Empty space
-                    context.fillStyle = "#f7e697";
+
+                    // context.fillStyle = "#f7e697";
+                    context.fillStyle = "rgba(0, 0, 0, 0)";
                     context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
                 } else if (tile == 1) {
                     // Wall
-                    context.fillStyle = "#bcae76";
+                    context.fillStyle = "#f7e697";
                     context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
                 } else if (tile == 2) {
                     // Apple
 
                     // Draw apple background
-                    context.fillStyle = "#f7e697";
+                    // context.fillStyle = "#f7e697";
+                    context.fillStyle = "rgba(0, 0, 0, 0)";
                     context.fillRect(tilex, tiley, level.tilewidth, level.tileheight);
 
                     // Draw the apple image
@@ -446,6 +474,7 @@ window.onload = function() {
 
     // Draw the snake
     function drawSnake() {
+
         // Loop over every snake segment
         for (var i=0; i<snake.segments.length; i++) {
             var segment = snake.segments[i];
@@ -514,10 +543,10 @@ window.onload = function() {
                     tx = 0; ty = 0;
                 }
             }
-
             // Draw the image of the snake part
             context.drawImage(tileimage, tx*64, ty*64, 64, 64, tilex, tiley,
                               level.tilewidth, level.tileheight);
+
         }
     }
 

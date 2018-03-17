@@ -8,15 +8,38 @@
   <link type="text/css" rel="stylesheet" href="/css/style.css" >
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <title>Quintez Martin | Rock Paper Scissors</title>
+  <title>Quintez Martin | Snake Game</title>
 </head>
 <body class="snakebg">
+  <nav class="homepage-navbar">
+    <img src="/Name.png">
+    <a id="lastitem" href="/contact">Contact</a>
+    <a href="/blog">Blog</a>
+    <a href="/media">Media</a>
+    <button style="cursor:pointer" onclick="myFunction()" class="homepage-navbar">Projects <i class="fa fa-caret-down" ></i></button>
+    <div class="dropdown">
+      <ul id="myDropdown" class="dropdown-content">
+        <li><a href="https://twp2studentshowcase.netlify.com/">Class Showcase</a></li>
+        <li><a href="/projects/choose-your-own-adventure">CYOA</a></li>
+        <li><a href="/projects/rps">RPS</a></li>
+        <li><a href="https://bookstoreproject.netlify.com/">Bookstore</a></li>
+        <li><a href="/projects/demo">Demo</a></li>
+        <li><a href="/projects/snake_game">Snake Game</a></li>
+      </ul>
+    </div>
+    <a href="/">Home</a>
+  </nav>
   <h1 class="snakeh"></h1>
   <div class="snake_score">
     <p id="score">Score: 0</p>
   </div>
   <canvas id="viewport" class="canc" height="480" width="640"></canvas>
   <button type="button" id="Start" class="snake_play"></button>
+  <div style="display:none;">
+  <img id="source" src="/projects/snake_game/grass.jpg"
+       width="640" height="480">
+</div>
+
   <script type="text/javascript" src="snakeV2.js"></script>
 </body>
 </html>

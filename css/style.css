@@ -1005,6 +1005,25 @@ top: 18px;
   margin-right: auto;
 }
 
+.snake_score {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bcae76;
+  height: 60px;
+  width: 640px;
+  /* text-align: left; */
+}
+
+.snake_score p {
+  display: inline-block;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
 /* Extra */
 
 

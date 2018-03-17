@@ -353,7 +353,11 @@ window.onload = function() {
                         snake.grow();
 
                         // Add a point to the score
-                        score++;
+                        score += 7;
+                        console.log(score);
+
+                        var output = document.getElementById("score");
+                        output.innerHTML = "Score: " + score;
                     }
 
 

@@ -11,12 +11,10 @@
   <title>Quintez Martin | Snake Game</title>
 </head>
 <body class="snakebg">
-  <nav class="homepage-navbar">
-    <img src="/Name.png">
-    <a id="lastitem" href="/contact">Contact</a>
-    <a href="/blog">Blog</a>
-    <a href="/media">Media</a>
-    <button style="cursor:pointer" onclick="myFunction()" class="homepage-navbar">Projects <i class="fa fa-caret-down" ></i></button>
+  <nav class="snake_nav">
+    <img src="/Name.png" class="snakenf">
+    <a href="/">Home</a>
+    <button style="cursor:pointer" onclick="myFunction()" class="snake_nav">Projects <i class="fa fa-caret-down" ></i></button>
     <div class="dropdown">
       <ul id="myDropdown" class="dropdown-content">
         <li><a href="https://twp2studentshowcase.netlify.com/">Class Showcase</a></li>
@@ -27,12 +25,17 @@
         <li><a href="/projects/snake_game">Snake Game</a></li>
       </ul>
     </div>
-    <a href="/">Home</a>
+    <a href="/media">Media</a>
+    <a href="/blog">Blog</a>
+    <a id="lastitem" href="/contact">Contact</a>
+
   </nav>
   <h1 class="snakeh"></h1>
+  <center>
   <div class="snake_score">
     <p id="score">Score: 0</p>
   </div>
+</center>
   <canvas id="viewport" class="canc" height="480" width="640"></canvas>
   <button type="button" id="Start" class="snake_play"></button>
   <div style="display:none;">

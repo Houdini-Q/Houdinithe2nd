@@ -7,7 +7,7 @@ function myFunction() {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.homepage-navbar')) {
+  if (!event.target.matches('.snake_nav')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;

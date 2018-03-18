@@ -954,34 +954,113 @@ top: 18px;
   font-size: 0.75rem;
 }
 
+/* Snake Game Nav Bar */
+
+.snake_nav {
+  display: block;
+  background-color: rgba(0, 128, 0, 1);
+  color: orange;
+  height: 70px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 960px;
+}
+
+.snake_nav:focus {
+  outline: none;
+}
+
+.snake_nav a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: orange;
+}
+
+.snake_nav a:hover {
+  color: white;
+}
+
+.snake_nav button {
+  display: inline-block;
+  min-width: 90px;
+  border: none;
+  font-family: serif;
+  font-size: 17px;
+  margin-left: -4px;
+}
+
+.snake_nav button:hover {
+  color: white;
+}
+
+.snake_nav ul {
+  top: 30px;
+  margin-left: -125px;
+}
+
+.snake_nav ul > li {
+  text-align: center;
+  background-color: rgba(0, 128, 0, 1);
+  color: orange;
+  border: solid 1px orange;
+}
+
+.snake_nav ul > li:hover {
+  background-color: rgba(0, 128, 0, 0.6);
+  color: white;
+}
+
+.snake_nav ul > li > a {
+  color: orange;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 8px 25px;
+}
+
+.snake_nav ul > li > a:hover {
+  padding: 8px 25px;
+  background-color: rgba(10, 10, 10, 0);
+  color: white;
+}
+
+.snakenf {
+  float: left;
+  margin-top: 7px;
+  margin-left: 5px;
+  border-radius: 0px;
+}
+
 /* Snake Game Style */
 
 .snakebg {
   background-image: url("/projects/snake_game/snakeBg.jpg");
   background-repeat: no-repeat;
   background-size: auto auto;
+  text-align: center;
 }
 
 .snakeh {
   text-align: center;
   background-position: center;
+  background-repeat: no-repeat;
   background-image: url("/projects/snake_game/snake_game.png");
   margin: 0 auto;
   margin-bottom: 40px;
-  width: 800px;
+  min-width: 960px;
   height: 200px;
 }
 
 .snake_play {
   background-position: center;
+  background-repeat: no-repeat;
   background-image: url("/projects/snake_game/play_button.png");
   background-color: rgba(255, 0, 0, 0);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* display: block; */
+  margin: 400px;
   margin-top: 20px;
   margin-bottom: 50px;
-  width: 170px;
+  min-width: 150px;
   height: 80px;
   cursor: pointer;
   outline: none;
@@ -998,21 +1077,20 @@ top: 18px;
 } */
 
 .canc {
-  /* background-color: #000; */
-  /* background-image: url("/projects/snake_game/grass.jpg"); */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 640px;
+  position: absolute;
+  margin-left: 155px;
 }
 
 .snake_score {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* display: block; */
   background-color: rgba(188, 174, 118, 1);
   height: 60px;
-  width: 640px;
-  /* text-align: left; */
+  min-width: 640px;
+  max-width: 640px;
+  text-align: left;
+  margin: 0 auto;
+  /* margin-left: 155px; */
 }
 
 .snake_score p {

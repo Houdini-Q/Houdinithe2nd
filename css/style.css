@@ -1077,9 +1077,10 @@ top: 18px;
 } */
 
 .canc {
-  min-width: 640px;
-  position: absolute;
-  margin-left: 155px;
+  max-width: 640px;
+  /* position: absolute; */
+  margin: 0 auto;
+  /* margin-left: 155px; */
 }
 
 .snake_score {

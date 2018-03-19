@@ -958,7 +958,7 @@ top: 18px;
 
 .snake_nav {
   display: block;
-  background-color: rgba(0, 128, 0, 1);
+  background-color: rgba(0, 200, 75, 1);
   color: orange;
   height: 70px;
   text-align: right;
@@ -1002,13 +1002,13 @@ top: 18px;
 
 .snake_nav ul > li {
   text-align: center;
-  background-color: rgba(0, 128, 0, 1);
+  background-color: rgba(0, 200, 75, 1);
   color: orange;
   border: solid 1px orange;
 }
 
 .snake_nav ul > li:hover {
-  background-color: rgba(0, 128, 0, 0.6);
+  background-color: rgba(0, 200, 75, 0.6);
   color: white;
 }
 

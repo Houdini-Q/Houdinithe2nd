@@ -9,7 +9,7 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <title>Quintez Martin | Demo Page</title>
+  <title>Quintez Martin | Graphic Demostration</title>
   <style type="text/css">
   body {
     margin: 0;
@@ -17,10 +17,25 @@
   </style>
 </head>
 <body>
-  <canvas id="space_box" class="c"></canvas>
-
-  <!-- <script type="text/javascript" src="matrix.js"></script> -->
-  <!-- <script type="text/javascript" src="demo.js"></script> -->
+  <nav class="snake_nav">
+    <img src="/Name.png" class="snakenf">
+    <a href="/">Home</a>
+    <button style="cursor:pointer" onclick="myFunction()" class="snake_nav">Projects <i class="fa fa-caret-down" ></i></button>
+    <div class="dropdown">
+      <ul id="myDropdown" class="dropdown-content">
+        <li><a href="https://twp2studentshowcase.netlify.com/">Class Showcase</a></li>
+        <li><a href="/projects/choose-your-own-adventure">CYOA</a></li>
+        <li><a href="/projects/rps">RPS</a></li>
+        <li><a href="https://bookstoreproject.netlify.com/">Bookstore</a></li>
+        <li><a href="/projects/demo">Demo</a></li>
+        <li><a href="/projects/snake_game">Snake Game</a></li>
+      </ul>
+    </div>
+    <a href="/media">Media</a>
+    <a href="/blog">Blog</a>
+    <a id="lastitem" href="/contact">Contact</a>
+  </nav>
+  <canvas></canvas>
   <script type="text/javascript" src="3-D.js"></script>
 </body>
 </html>

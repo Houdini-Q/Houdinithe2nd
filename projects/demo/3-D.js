@@ -1,10 +1,30 @@
-// var canvas = document.getElementById('space_box');
+
 var canvas = document.querySelector('canvas');
 var c = canvas.getContext('2d');
-console.log('rplace');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.snake_nav')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
 // c.fillStyle = 'rgba(255, 0, 0, 0.5)';
 // c.fillRect(200, 100, 100, 100);

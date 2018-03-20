@@ -22,9 +22,10 @@ window.onclick = function(event) {
 }
 var bt = document.querySelector('.buttonp');
 
+window.onload = function() {
 //Greets player with alert and instructions
 alert("Choose Rock, Paper, or Scissors by pressing the 'Rock', 'Paper', or 'Scissor' button");
-
+}
 
 function generate(e) {
   var userWins = "<p>You win!</p>";

@@ -1,6 +1,5 @@
 
 
-
 @font-face {
   font-family: 'Chancery Cursive';
   src: url('/css/fonts/chancur-webfont.woff2') format('woff2'),
@@ -68,41 +67,6 @@ ul {
   background-color: rgba(255, 255, 0, 0.5);
 }
 
-#input {
-  box-sizing: border-box;
-  background-color: #e1e1db;
-  width: 40%;
-  padding: 12px 14px;
-  border: 0;
-  border-radius: 3px;
-  margin-right: 4em;
-  margin-bottom: 2em;
-}
-
-#message {
-  background-image: url("/contact/Old Paper.jpg");
-  background-color: #e1e1db;
-  background-size: 100% 100%;
-  width: 100%;
-  padding: 12px 14px;
-  border: 0;
-  border-radius: 3px
-}
-
-textarea {
-  font-family: "segoe print", sans-serif;
-  font-size: 14px;
-}
-.c-button {
-  margin: 0 auto;
-  text-align: center;
-  font-weight: bold;
-}
-
-.c-button:hover {
-  color:  rgba(215, 215, 215, .7)
-}
-
 .highlighted {
   color: silver;
 }
@@ -147,7 +111,7 @@ textarea {
 /* Navigation bar for Home Page */
 
 .homepage-navbar {
-  min-width: 1000px;
+  min-width: 1010px;
   height: 70px;
   background-color: black;
   text-align: right;
@@ -203,7 +167,6 @@ textarea {
 .homepage-navbar ul > li > a:hover {
   background-color: #ddd;
   padding: 10px 60px;
-  /* margin-left: 15px; */
 }
 
 .homepage-navbar ul {
@@ -224,7 +187,7 @@ textarea {
 
 .main-body {
   height: 800px;
-  min-width: 1000px;
+  min-width: 1010px;
   background-size: 100% 100%;
   background-image: url("/CTS.jpg");
   color: black;
@@ -233,7 +196,7 @@ textarea {
 
 .main-body2 {
   height: 800px;
-  min-width: 1000px;
+  min-width: 1010px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top;
@@ -245,7 +208,7 @@ textarea {
 }
 
 .main-body3 {
-  min-width: 1000px;
+  min-width: 1010px;
   background-color: black;
   color: #ECBA3E;
   margin-top: -40px;
@@ -349,9 +312,8 @@ overflow: hidden;
   color: #552583;
   text-align: left;
   font-family: sans-serif;
-  padding: 0;
   border: none;
-  min-width: 1367px;
+  min-width: 1348px;
 }
 
 .medianav button {
@@ -396,20 +358,22 @@ overflow: hidden;
 }
 
 .videoWrapper h2 {
-  margin-left: 610px;
+  margin-left: 565px;
+  width: 200px;
   margin-bottom: 30px;
+  text-align: center;
  }
 
 .videoWrapper iframe {
 	width: 700px;
 	height: 500px;
-  margin-left: 330px;
+  margin-left: 325px;
 }
 
 .media {
   width: 500px;
   text-align: center;
-  margin-left: 425px;
+  margin-left: 415px;
   margin-bottom: 150px;
 }
 
@@ -417,30 +381,30 @@ overflow: hidden;
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 2560px;
+  height: 2500px;
   opacity: 0.5;
   width: 162px;
-  border-bottom: -17px
+  margin-bottom: -25px;
 }
 
 #mediaspr {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 2560px;
+  height: 2500px;
   transform: scaleX(-1);
   opacity: 0.5;
   width: 162px;
-  margin-top: -2560px;
-  margin-left: 1205px;
-  margin-bottom: -17px;
+  margin-top: -2500px;
+  margin-left: 1186px;
+  margin-bottom: -25px;
 }
 
 #greeting {
   background-color: rgba(0, 0, 0, 0);
   color: white;
-  margin-left: 425px;
-  margin-top: -2460px;
+  margin-left: 420px;
+  margin-top: -2385px;
   width: 500px;
 }
 
@@ -451,7 +415,7 @@ overflow: hidden;
 }
 
 #mediab {
-  width: 1043px;
+  width: 1024px;
   bottom: 0px;
   font-size: 0.75rem;
   text-align: center;
@@ -471,7 +435,7 @@ overflow: hidden;
 .nav2 {
   background-color: #660066;
   color: #fdb927;
-  min-width: 960px;
+  min-width: 967px;
   height: 55px;
   border: none;
 }
@@ -587,6 +551,40 @@ overflow: hidden;
   height: 150px;
   min-width: 915px;
 }
+#input {
+  box-sizing: border-box;
+  background-color: #e1e1db;
+  width: 40%;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 3px;
+  margin-right: 4em;
+  margin-bottom: 2em;
+}
+
+#message {
+  background-image: url("/contact/Old Paper.jpg");
+  background-color: #e1e1db;
+  background-size: 100% 100%;
+  width: 100%;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 3px
+}
+
+textarea {
+  font-family: "segoe print", sans-serif;
+  font-size: 14px;
+}
+.c-button {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.c-button:hover {
+  color:  rgba(215, 215, 215, .7)
+}
 
 .contactb {
   background-image: url("/contact/Black Panther.jpg");
@@ -634,6 +632,7 @@ overflow: hidden;
   }
 
 /* Project page nav bar */
+
 .pronav {
   padding: 20px 10px;
   background-color: white;
@@ -886,7 +885,7 @@ top: 18px;
 }
 
 #results p {
-  color: silver;
+  color: white;
   font-size: 20px;
   padding-top: 23px;
   text-align: center;
@@ -905,7 +904,7 @@ top: 18px;
   height: 55px;
   background-color: rgba(0, 0, 0, 0);
   float: left;
-  color: rgba(255, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
  }
 
 .button1:hover {
@@ -924,7 +923,7 @@ top: 18px;
 }
 
 .button2:hover {
-  background-color: rgba(255, 255, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   background-image: url("/projects/rps/Paper.jpg");
   opacity: 0.7;
   border-style: none;
@@ -940,7 +939,7 @@ top: 18px;
 }
 
 .button3:hover {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   background-image: url("/projects/rps/Scissors.jpg");
   opacity: 0.5;
   border-style: none;
@@ -1056,7 +1055,6 @@ top: 18px;
   background-repeat: no-repeat;
   background-image: url("/projects/snake_game/play_button.png");
   background-color: rgba(255, 0, 0, 0);
-  /* display: block; */
   margin: 400px;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -1067,15 +1065,6 @@ top: 18px;
   border: none;
 }
 
-/* #chunk-game {
-  background-color: #000;
-  background-image: url("grass.jpg");
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid 5px purple;
-} */
-
 .canc {
   max-width: 640px;
   /* position: absolute; */
@@ -1084,14 +1073,12 @@ top: 18px;
 }
 
 .snake_score {
-  /* display: block; */
   background-color: rgba(188, 174, 118, 1);
   height: 60px;
   min-width: 640px;
   max-width: 640px;
   text-align: left;
   margin: 0 auto;
-  /* margin-left: 155px; */
 }
 
 .snake_score p {
@@ -1105,11 +1092,10 @@ top: 18px;
 
 /* Extra */
 
-
-.contact-btn a:active {
+/* .contact-btn a:active {
   position: relative;
   bottom: 2px;
-}
+} */
 
 .bottom {
     position: relative;

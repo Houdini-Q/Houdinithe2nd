@@ -26,43 +26,14 @@ window.onclick = function(event) {
   }
 }
 
-// c.fillStyle = 'rgba(255, 0, 0, 0.5)';
-// c.fillRect(200, 100, 100, 100);
-// c.fillStyle = 'rgba(0, 255, 0, 0.5)';
-// c.fillRect(400, 100, 100, 100);
-// c.fillStyle = 'rgba(0, 0 , 255, 0.5)';
-// c.fillRect(600, 100, 100, 100);
-//
-// for (var i = 0; i < 100; i++) {
-//   var x = Math.random() * window.innerWidth;
-//   var y = Math.random() * window.innerHeight;
-//   var r = Math.floor(Math.random()*256);
-//   var g = Math.floor(Math.random()*256);
-//   var b = Math.floor(Math.random()*256);
-//   var rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
-//
-//   c.beginPath();
-//   c.arc(x, y, 30, 0, Math.PI * 2, false);
-//   c.strokeStyle = rgb;
-//   c.stroke();
-// }
-
-// var x = Math.random() * innerWidth;
-// var y = Math.random() * innerHeight;
-// var dx = (Math.random() - 0.5) * 10;
-// var dy = (Math.random() - 0.5) * 10;
-// var radius = 30;
 var mouse = {
   x: undefined,
   y: undefined
 }
 
 var maxRadius = 40;
-// var minRadius = 2;
 
-var colorArray = [
-
-]
+var colorArray = [];
 
 window.addEventListener('mousemove', function(event) {
   mouse.x = event.x;
@@ -91,7 +62,6 @@ function Circle(x, y, dx, dy, radius) {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     c.fillStyle = this.rgb;
-//  c.fillStyle = this.color;
     c.strokeStyle = this.rgb;
     c.fill();
     c.stroke();
@@ -116,21 +86,13 @@ function Circle(x, y, dx, dy, radius) {
     } else if (this.radius > this.minRadius) {
       this.radius -=1;
     }
-
-
     this.draw();
   }
 }
 
-// var x = Math.random() * innerWidth;
-// var y = Math.random() * innerHeight;
-// var dx = (Math.random() - 0.5) * 10;
-// var dy = (Math.random() - 0.5) * 10;
-// var radius = 30;
-
 var circleArray = [];
 
-for (var i = 0; i < 800; i++) {
+for (var i = 0; i < 1000; i++) {
   var radius = Math.random() * 3 + 1;
   var x = Math.random() * (innerWidth - radius * 2) + radius;
   var y = Math.random() * (innerHeight - radius * 2) + radius;
@@ -140,7 +102,6 @@ for (var i = 0; i < 800; i++) {
   var g = Math.floor(Math.random()*256);
   var b = Math.floor(Math.random()*256);
   var rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
-
 
   circleArray.push(new Circle(x, y, dx, dy, radius));
 }

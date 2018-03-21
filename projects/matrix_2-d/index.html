@@ -4,12 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/jpg" href="/Favicon.jpg">
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <title>Quintez Martin | Matrix Code</title>
 </head>
 <body>
+  <nav class="nav-cyoa">
+    <a href="/">Home</a>
+    <button style="cursor:pointer" onclick="myFunction()" class="nav-cyoa">Projects <i class="fa fa-caret-down" style="display: inline;"></i></button>
+    <div class="dropdown">
+      <ul id="myDropdown" class="dropdown-content">
+        <li><a href="https://twp2studentshowcase.netlify.com/">Class Showcase</a></li>
+        <li><a href="/projects/choose-your-own-adventure">CYOA</a></li>
+        <li><a href="/projects/rps">RPS</a></li>
+        <li><a href="/projects/graphic_design">Graphic Design</a></li>
+        <li><a href="/projects/matrix_2-d">Matrix Code</a></li>
+        <li><a href="/projects/snake_game">Snake Game</a></li>
+      </ul>
+    </div>
+    <a href="/media">Media</a>
+    <a href="/blog">Blog</a>
+    <a href="/contact">Contact</a>
+  </nav>
   <canvas id="space_box" class="c"></canvas>
-
-  <!-- <script type="text/javascript" src="matrix.js"></script> -->
   <script type="text/javascript" src="demo.js"></script>
 </body>
 </html>

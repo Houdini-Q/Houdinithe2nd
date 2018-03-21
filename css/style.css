@@ -132,7 +132,7 @@ ul {
   text-align: center;
   float: right;
   min-width: 100px;
-  padding-bottom: 2.3px;
+  padding-bottom: 2px;
   border: none;
   color: gold;
  }
@@ -191,10 +191,14 @@ ul {
   background-size: 100% 100%;
   background-image: url("/CTS.jpg");
   color: black;
-  overflow: hidden;
+  /* box-shadow: -20px 15px 20px 0px black; */
+  border-bottom: 2px solid black;
+  position: relative;
+  /* z-index: 1; */
   }
 
 .main-body2 {
+  position: relative;
   height: 800px;
   min-width: 1010px;
   background-repeat: no-repeat;
@@ -202,7 +206,6 @@ ul {
   background-position: top;
   background-image: url("/MeTux.jpg");
   color: purple;
-  border-top: 2px solid black;
   border-bottom: 2px solid purple;
   overflow: hidden;
 }
@@ -211,7 +214,6 @@ ul {
   min-width: 1010px;
   background-color: black;
   color: #ECBA3E;
-  margin-top: -40px;
 }
 
 .main-body3 h2 {
@@ -313,7 +315,8 @@ overflow: hidden;
   text-align: left;
   font-family: sans-serif;
   border: none;
-  min-width: 1348px;
+  min-width: 1349px;
+  max-width: 1349px;
 }
 
 .medianav button {
@@ -354,12 +357,14 @@ overflow: hidden;
 .body-media {
   background-color: #552583;
   color: #FDB927;
-  min-width: 1000px;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .videoWrapper h2 {
   margin-left: 565px;
   width: 200px;
+  max-width: 200px;
   margin-bottom: 30px;
   text-align: center;
  }
@@ -380,10 +385,11 @@ overflow: hidden;
 #mediaspl {
   background-image: url("https://i.ytimg.com/vi/sS6hlq1OvqU/maxresdefault.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
   height: 2500px;
   opacity: 0.5;
   width: 162px;
+  min-width: 1000;
   margin-bottom: -25px;
 }
 
@@ -466,7 +472,6 @@ overflow: hidden;
   font-family: serif;
   text-align: center;
   min-width: 90px;
-  margin-left: 10px;
 }
 
 .nav2 ul > li {
@@ -536,21 +541,10 @@ overflow: hidden;
   float:right;
 }
 
-
 .rdimg p, img {
   border-radius: 20px;
 }
 
-.post {
-  margin: 25px 0 0 0;
-  background-color: white;
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid purple;
-  height: 150px;
-  min-width: 915px;
-}
 #input {
   box-sizing: border-box;
   background-color: #e1e1db;
@@ -731,14 +725,12 @@ textarea {
 /* Choose Your Own Adventure Page Style */
 
 .body-cyoa {
-  box-sizing: border-box;
+  position: relative;
   background-image: url("/projects/choose-your-own-adventure/The Matrix.gif");
   background-color: black;
   color: #76A236;
   min-width: 1000px;
-  height: auto;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .cyoa-title {
@@ -762,10 +754,9 @@ textarea {
 }
 
 .footercyoa {
-    height: 40px;
     position: absolute;
     min-width: 1000px;
-    bottom: 0px;
+    bottom: 0;
     right: 0;
     left: 0;
     border-top: outset 2px;
@@ -905,6 +896,7 @@ top: 18px;
   background-color: rgba(0, 0, 0, 0);
   float: left;
   color: rgba(0, 0, 0, 0);
+  outline: none;
  }
 
 .button1:hover {
@@ -920,6 +912,7 @@ top: 18px;
   margin-left: 112px;
   background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 0, 0, 0);
+  outline: none;
 }
 
 .button2:hover {
@@ -936,6 +929,7 @@ top: 18px;
   background-color: rgba(255, 0, 0, 0);
   float: right;
   color: rgba(255, 0, 0, 0);
+  outline: none;
 }
 
 .button3:hover {
@@ -1037,6 +1031,7 @@ top: 18px;
   background-repeat: no-repeat;
   background-size: auto auto;
   text-align: center;
+  color: white;
 }
 
 .snakeh {

@@ -29,6 +29,6 @@ window.onclick = function(event) {
 //     $( ".content" ).append( blurb );
 // }
 
-getPosts.then(
-    ( posts ) => posts.forEach( handlePost )
-);
+// getPosts.then(
+//     ( posts ) => posts.forEach( handlePost )
+// );

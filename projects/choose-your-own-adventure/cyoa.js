@@ -35,18 +35,20 @@ function setButtonText() {
 
 }
 
-$(window).bind("load", function() {
-   // code here
 
-  var output = document.querySelector('#begin');
-
-    firstName = prompt("Before we begin this game, for starters I must ask you, what is your first name?") || "Visitor";
-    lastName = prompt("What's your last name?") || "";
-
-output.innerHTML = "<p>Welcome to your adventure, " + firstName + " " + lastName + ". Now let us begin!</p>";
-});
 
   function matrix() {
+
+    $(window).bind("load", function() {
+       // code here
+
+      var output = document.querySelector('#begin');
+
+        firstName = prompt("Before we begin this game, for starters I must ask you, what is your first name?") || "Visitor";
+        lastName = prompt("What's your last name?") || "";
+
+    output.innerHTML = "<p>Welcome to your adventure, " + firstName + " " + lastName + ". Now let us begin!</p>";
+    });
 
   var response = prompt(firstName + ", you walk into a dim, cozy, fire lit room. There is a comfortable looking leather chair and a wooden table. You are eager to sit down so you do. But once you do you notice on the table that there is a glass of water. And infront of the glass is a red pill, and a blue pill. For some odd reason you are compelled to take one of the pills. If you take the blue pill the adventure simply ends and you are removed from the game. If you take the red pill...well as you should know, you stay in wonderland and you will see how deep the rabbit hole goes. Type 'blue' to take the blue pill, type 'red' to take the red pill.");
 

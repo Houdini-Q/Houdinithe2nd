@@ -1108,3 +1108,13 @@ top: 18px;
     left: 0px;
     bottom: 0px;
   }
+
+#logo-page {
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.lt {
+  text-align: center;
+  font-size: 3em;
+  color: black;
+}
